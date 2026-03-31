@@ -22,7 +22,7 @@ const FOOTER_BRAND_NAME = "Star Rentals Club";
 export default function Footer() {
   return (
     <footer className="bg-slate-950 text-slate-300">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 pt-12 pb-28 sm:px-6 md:pb-12 lg:px-8">
         <div className="grid gap-10 sm:grid-cols-2 xl:grid-cols-4">
           <div>
             <h2 className="text-lg font-semibold text-white">{FOOTER_BRAND_NAME}</h2>
@@ -69,15 +69,6 @@ export default function Footer() {
                   <span>{BUSINESS.email}</span>
                 </a>
               </li>
-              <li>
-                <a
-                  href={`mailto:${BUSINESS.bookingEmail}`}
-                  className="inline-flex min-h-[44px] items-center gap-3 text-slate-300 transition-colors hover:text-white"
-                >
-                  <HiOutlineEnvelope className="h-5 w-5 text-brand-300" />
-                  <span>{BUSINESS.bookingEmail}</span>
-                </a>
-              </li>
             </ul>
           </div>
 
@@ -118,6 +109,17 @@ export default function Footer() {
 
         <div className="mt-10 border-t border-slate-800 pt-6 text-center text-sm text-slate-500">
           &copy; {new Date().getFullYear()} {FOOTER_BRAND_NAME}. All rights reserved.
+          <div className="mt-2">
+            Powered by{" "}
+            <a
+              href="https://ezilab.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-brand-300 underline decoration-brand-300 underline-offset-4 transition-colors hover:text-white hover:decoration-white"
+            >
+              EZILAB.io
+            </a>
+          </div>
         </div>
       </div>
     </footer>

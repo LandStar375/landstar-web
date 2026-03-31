@@ -2,9 +2,16 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { HiOutlineTruck, HiOutlineWrenchScrewdriver, HiOutlineUserGroup, HiOutlineChatBubbleLeftRight } from "react-icons/hi2";
+import {
+  HiOutlineChatBubbleLeftRight,
+  HiOutlineHome,
+  HiOutlineTruck,
+  HiOutlineUserGroup,
+  HiOutlineWrenchScrewdriver,
+} from "react-icons/hi2";
 
 const tabs = [
+  { href: "/", label: "Home", icon: HiOutlineHome },
   { href: "/cars", label: "Cars", icon: HiOutlineTruck },
   { href: "/services", label: "Services", icon: HiOutlineWrenchScrewdriver },
   { href: "/about", label: "About", icon: HiOutlineUserGroup },
