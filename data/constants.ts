@@ -1,0 +1,17 @@
+export const BUSINESS = {
+  name: "Land Star",
+  phone: "0469716030",
+  phoneHref: "+61469716030",
+  whatsappPhone: "61469716030",
+  email: "info@starrentals.com.au",
+  bookingEmail: "zahidafridi.972@gmail.com",
+  location: "92 Mallard Way Cannington 6107 WA",
+  mapsUrl: "https://www.google.com/maps/search/?api=1&query=92+Mallard+Way+Cannington+6107+WA",
+  pickupLocation: "92 Mallard Way Cannington 6107 WA",
+  businessHours: "Mon-Sat, 8:00 AM - 5:00 PM",
+  serviceArea: "West Perth Australia",
+  yearsInBusiness: "10+",
+  happyCustomers: "1000+",
+  responseTime: "Fast replies",
+  rating: "5.0/5",
+} as const;
