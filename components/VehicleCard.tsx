@@ -1,3 +1,5 @@
+"use client";
+
 import type { CSSProperties } from "react";
 import Image from "next/image";
 import { VehicleCardProps } from "@/types";
@@ -11,13 +13,15 @@ export default function VehicleCard({
   const vehicleAccent = "#596626";
   const pricingTiers = [
     { label: "1-2 Days", price: vehicle.pricePerDay },
-    { label: "3-5 Days", price: Math.max(vehicle.pricePerDay - 5, 35) },
-    { label: "6-7+ Days", price: Math.max(vehicle.pricePerDay - 10, 30) },
+    { label: "3-4 Days", price: Math.max(vehicle.pricePerDay - 5, 35) },
+    { label: "5-6 Days", price: Math.max(vehicle.pricePerDay - 8, 32) },
+    { label: "7+ Days", price: Math.max(vehicle.pricePerDay - 10, 30) },
   ];
+  const weeklyRate = Math.max(vehicle.pricePerDay - 10, 30);
   const bookingHref = `mailto:${BUSINESS.bookingEmail}?subject=${encodeURIComponent(
-    `Booking enquiry - ${vehicle.name}`
+    `Vehicle Booking Request – ${vehicle.name}`
   )}&body=${encodeURIComponent(
-    `Hi, I would like to book the ${vehicle.name} listed from $${vehicle.pricePerDay}/day.`
+    `Dear Land Star Rentals Team,\n\nI am interested in hiring the ${vehicle.name} (${vehicle.type}, ${vehicle.seats}-seater, ${vehicle.transmission}, ${vehicle.fuelType}) at the weekly rate of $${weeklyRate}/day.\n\nCould you please confirm availability and provide details on the booking process, required documents, and any applicable terms?\n\nPreferred pick-up date: \nPreferred return date: \nPick-up location: \n\nI look forward to hearing from you.\n\nKind regards,\n[Your Name]\n[Your Contact Number]`
   )}`;
   const vehicleButtonStyle = {
     "--vehicle-button-color": vehicleAccent,
@@ -35,17 +39,8 @@ export default function VehicleCard({
         />
       </div>
       <div className="flex flex-1 flex-col gap-4 p-5">
-        <div className="flex items-start justify-between gap-4">
+        <div>
           <h3 className="text-xl font-bold text-slate-900">{vehicle.name}</h3>
-          <div className="text-right">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
-              From
-            </p>
-            <p className="mt-1 text-2xl font-bold text-vehicle-700">
-              ${vehicle.pricePerDay}
-              <span className="text-sm font-medium text-slate-500">/day</span>
-            </p>
-          </div>
         </div>
         <div className="grid grid-cols-2 gap-2 text-xs text-slate-700 sm:text-sm">
           <div className="rounded-xl bg-slate-50 px-3 py-2 text-center">{vehicle.type}</div>
@@ -56,7 +51,7 @@ export default function VehicleCard({
         <div className="rounded-2xl border border-slate-200 bg-slate-50/70">
           <div className="border-b border-slate-200 px-4 py-3">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
-              Dummy Pricing Guide
+              Rental Pricing Guide
             </p>
           </div>
           <div className="divide-y divide-slate-200">
@@ -82,13 +77,13 @@ export default function VehicleCard({
           >
             Call to Book
           </a>
-          <a
-            href={bookingHref}
+          <button
+            onClick={() => window.open(bookingHref, "_blank")}
             className="vehicle-card-button vehicle-card-button-secondary"
             style={vehicleButtonStyle}
           >
             Email Us
-          </a>
+          </button>
         </div>
       </div>
     </article>
