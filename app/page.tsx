@@ -12,10 +12,20 @@ export const metadata: Metadata = {
   title: "Home",
   description:
     "Land Star Car Rental - reliable, affordable car hire across Australia with flexible pickup, clear pricing, and a fleet for every trip.",
+  keywords: [
+    "car rental Australia",
+    "affordable car hire Perth",
+    "rent a car Cannington",
+    "cheap car rental WA",
+    "Land Star car rental",
+  ],
   openGraph: {
     title: "Home | Land Star Car Rental",
     description:
       "Land Star Car Rental - reliable, affordable car hire across Australia with flexible pickup, clear pricing, and a fleet for every trip.",
+  },
+  alternates: {
+    canonical: "https://landstar.com.au",
   },
 };
 
@@ -138,9 +148,26 @@ function InfoCard({
   );
 }
 
+const homeFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+};
+
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqSchema) }}
+      />
       <HeroSection />
 
       <section className="bg-white px-6 py-16 md:px-12">

@@ -8,10 +8,21 @@ export const metadata: Metadata = {
   title: "Our Fleet",
   description:
     "Browse the full range of Land Star rental vehicles — sedans, SUVs, utes, and people movers available for hire across Australia.",
+  keywords: [
+    "rental cars Perth",
+    "hire car fleet",
+    "SUV rental Cannington",
+    "ute hire Perth",
+    "sedan rental WA",
+    "people mover hire",
+  ],
   openGraph: {
     title: "Our Fleet | Land Star Car Rental",
     description:
       "Browse the full range of Land Star rental vehicles — sedans, SUVs, utes, and people movers available for hire across Australia.",
+  },
+  alternates: {
+    canonical: "https://landstar.com.au/cars",
   },
 };
 

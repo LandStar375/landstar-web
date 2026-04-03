@@ -28,6 +28,9 @@ export const metadata: Metadata = {
     description:
       "Learn how Land Star Car Rental helps drivers, families, and business customers with reliable vehicles, clear pricing, and flexible car hire.",
   },
+  alternates: {
+    canonical: "https://landstar.com.au/about",
+  },
   robots: {
     index: true,
     follow: true,

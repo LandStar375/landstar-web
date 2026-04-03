@@ -5,6 +5,14 @@ export const metadata: Metadata = {
   title: "Terms and Conditions",
   description:
     "Review the rental terms and conditions for Star Rentals Club, including renter responsibilities, coverage options, return rules, and business hours.",
+  openGraph: {
+    title: "Terms and Conditions | Land Star Car Rental",
+    description:
+      "Review the rental terms and conditions for Star Rentals Club, including renter responsibilities, coverage options, return rules, and business hours.",
+  },
+  alternates: {
+    canonical: "https://landstar.com.au/terms-and-conditions",
+  },
 };
 
 const businessName = "Star Rentals Club";

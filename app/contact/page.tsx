@@ -7,10 +7,19 @@ export const metadata: Metadata = {
   title: "Contact Us",
   description:
     "Get in touch with Land Star Car Rental. Call, email, or send us a message - we're here to help you find the right vehicle.",
+  keywords: [
+    "contact Land Star",
+    "car rental enquiry",
+    "book a rental car Perth",
+    "car hire contact Cannington",
+  ],
   openGraph: {
     title: "Contact Us | Land Star Car Rental",
     description:
       "Get in touch with Land Star Car Rental. Call, email, or send us a message - we're here to help you find the right vehicle.",
+  },
+  alternates: {
+    canonical: "https://landstar.com.au/contact",
   },
 };
 
