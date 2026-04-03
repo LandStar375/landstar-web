@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       "Browse the full range of Land Star rental vehicles — sedans, SUVs, utes, and people movers available for hire across Australia.",
   },
   alternates: {
-    canonical: "https://landstar.com.au/cars",
+    canonical: "https://starrental.com.au/cars",
   },
 };
 

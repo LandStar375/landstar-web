@@ -37,7 +37,7 @@ export const metadata: Metadata = {
       "Daily, weekly, and long-term vehicle hire for local travel, family trips, airport pickup needs, business use, and replacement transport.",
   },
   alternates: {
-    canonical: "https://landstar.com.au/services",
+    canonical: "https://starrental.com.au/services",
   },
   robots: {
     index: true,

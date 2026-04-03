@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://landstar.com.au/sitemap.xml",
+    sitemap: "https://starrental.com.au/sitemap.xml",
   };
 }

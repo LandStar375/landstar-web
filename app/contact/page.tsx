@@ -19,7 +19,7 @@ export const metadata: Metadata = {
       "Get in touch with Land Star Car Rental. Call, email, or send us a message - we're here to help you find the right vehicle.",
   },
   alternates: {
-    canonical: "https://landstar.com.au/contact",
+    canonical: "https://starrental.com.au/contact",
   },
 };
 

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
       "Review the rental terms and conditions for Star Rentals Club, including renter responsibilities, coverage options, return rules, and business hours.",
   },
   alternates: {
-    canonical: "https://landstar.com.au/terms-and-conditions",
+    canonical: "https://starrental.com.au/terms-and-conditions",
   },
 };
 

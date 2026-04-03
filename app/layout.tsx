@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://landstar.com.au"),
+  metadataBase: new URL("https://starrental.com.au"),
   title: {
     template: "%s | Land Star Car Rental",
     default: "Land Star Car Rental",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
   },
   alternates: {
-    canonical: "https://landstar.com.au",
+    canonical: "https://starrental.com.au",
   },
 };
 
@@ -63,7 +63,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "AutoRental",
               name: "Land Star Car Rental",
-              url: "https://landstar.com.au",
+              url: "https://starrental.com.au",
               telephone: "+61469716030",
               email: "info@starrental.com.au",
               address: {

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
       "Land Star Car Rental - reliable, affordable car hire across Australia with flexible pickup, clear pricing, and a fleet for every trip.",
   },
   alternates: {
-    canonical: "https://landstar.com.au",
+    canonical: "https://starrental.com.au",
   },
 };
 
