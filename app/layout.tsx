@@ -21,23 +21,25 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://starrental.com.au"),
   title: {
-    template: "%s | Land Star Car Rental",
-    default: "Land Star Car Rental",
+    template: "%s | Star Rental Club – Car Hire Perth",
+    default: "Star Rental Club – Affordable Car Hire in Perth, Australia",
   },
   description:
-    "Land Star Car Rental — browse our fleet of quality rental vehicles and get in touch today. Serving Australia with reliable, affordable car hire.",
+    "Star Rental Club offers affordable car hire in Perth and Cannington, WA. Browse sedans, SUVs, utes, and people movers for daily, weekly, and long-term rental.",
   keywords: [
-    "car rental",
-    "car hire",
-    "Land Star",
-    "rental vehicles",
-    "Perth car rental",
+    "car rental Perth",
+    "car hire Perth",
+    "Star Rental Club",
+    "cheap car rental Cannington",
+    "affordable car hire WA",
+    "rent a car Perth",
+    "vehicle hire Australia",
     "Cannington car hire",
     "affordable car rental Australia",
   ],
   openGraph: {
     type: "website",
-    siteName: "Land Star Car Rental",
+    siteName: "Star Rental Club",
     locale: "en_AU",
   },
   alternates: {
@@ -62,7 +64,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "AutoRental",
-              name: "Land Star Car Rental",
+              name: "Star Rental Club",
               url: "https://starrental.com.au",
               telephone: "+61469716030",
               email: "info@starrental.com.au",

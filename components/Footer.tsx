@@ -17,7 +17,7 @@ const NAV_LINKS = [
   { href: "/terms-and-conditions", label: "Terms & Conditions" },
 ];
 
-const FOOTER_BRAND_NAME = "Star Rentals Club";
+const FOOTER_BRAND_NAME = "Star Rental Club";
 
 export default function Footer() {
   return (

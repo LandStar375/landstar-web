@@ -1,5 +1,5 @@
 export const BUSINESS = {
-  name: "Land Star",
+  name: "Star Rental Club",
   phone: "0469716030",
   phoneHref: "+61469716030",
   whatsappPhone: "61469716030",

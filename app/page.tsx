@@ -11,18 +11,19 @@ import { HiOutlineClock, HiOutlineGlobeAlt, HiOutlineMapPin } from "react-icons/
 export const metadata: Metadata = {
   title: "Home",
   description:
-    "Land Star Car Rental - reliable, affordable car hire across Australia with flexible pickup, clear pricing, and a fleet for every trip.",
+    "Star Rental Club – reliable, affordable car hire in Perth with flexible pickup, clear pricing, and a fleet for every trip.",
   keywords: [
-    "car rental Australia",
-    "affordable car hire Perth",
-    "rent a car Cannington",
-    "cheap car rental WA",
-    "Land Star car rental",
+    "car rental Perth",
+    "affordable car hire Cannington",
+    "rent a car Perth WA",
+    "cheap car rental Western Australia",
+    "Star Rental Club",
+    "daily weekly car hire Perth",
   ],
   openGraph: {
-    title: "Home | Land Star Car Rental",
+    title: "Star Rental Club – Affordable Car Hire in Perth, Australia",
     description:
-      "Land Star Car Rental - reliable, affordable car hire across Australia with flexible pickup, clear pricing, and a fleet for every trip.",
+      "Star Rental Club – reliable, affordable car hire in Perth with flexible pickup, clear pricing, and a fleet for every trip.",
   },
   alternates: {
     canonical: "https://starrental.com.au",
@@ -260,7 +261,7 @@ export default function HomePage() {
               Why Rent With Us
             </p>
             <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
-              Why Land Star?
+              Why Star Rental Club?
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-600">
               We&apos;ve been helping Australians get on the road with quality

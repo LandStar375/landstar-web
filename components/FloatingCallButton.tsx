@@ -135,7 +135,7 @@ export default function FloatingCallButton() {
 
         <a
           href={`tel:${BUSINESS.phoneHref}`}
-          aria-label="Call Land Star"
+          aria-label="Call Star Rental Club"
           className={`absolute bottom-1 right-1 flex h-12 w-12 items-center justify-center rounded-full bg-brand-700 text-white shadow-lg transition-all duration-300 hover:bg-brand-800 ${
             open
               ? "pointer-events-auto -translate-x-[84px] -translate-y-[14px] scale-100 opacity-100"

@@ -6,17 +6,17 @@ import { BUSINESS } from "@/data/constants";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with Land Star Car Rental. Call, email, or send us a message - we're here to help you find the right vehicle.",
+    "Get in touch with Star Rental Club in Cannington, Perth. Call, email, or send us a message to book your next rental car.",
   keywords: [
-    "contact Land Star",
-    "car rental enquiry",
-    "book a rental car Perth",
-    "car hire contact Cannington",
+    "contact Star Rental Club",
+    "car rental enquiry Perth",
+    "book a rental car Cannington",
+    "car hire contact Perth WA",
   ],
   openGraph: {
-    title: "Contact Us | Land Star Car Rental",
+    title: "Contact Us – Book a Car | Star Rental Club Perth",
     description:
-      "Get in touch with Land Star Car Rental. Call, email, or send us a message - we're here to help you find the right vehicle.",
+      "Get in touch with Star Rental Club in Cannington, Perth. Call, email, or send us a message to book your next rental car.",
   },
   alternates: {
     canonical: "https://starrental.com.au/contact",

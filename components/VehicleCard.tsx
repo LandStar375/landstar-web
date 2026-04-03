@@ -21,7 +21,7 @@ export default function VehicleCard({
   const bookingHref = `mailto:${BUSINESS.bookingEmail}?subject=${encodeURIComponent(
     `Vehicle Booking Request – ${vehicle.name}`
   )}&body=${encodeURIComponent(
-    `Dear Land Star Rentals Team,\n\nI am interested in hiring the ${vehicle.name} (${vehicle.type}, ${vehicle.seats}-seater, ${vehicle.transmission}, ${vehicle.fuelType}) at the weekly rate of $${weeklyRate}/day.\n\nCould you please confirm availability and provide details on the booking process, required documents, and any applicable terms?\n\nPreferred pick-up date: \nPreferred return date: \nPick-up location: \n\nI look forward to hearing from you.\n\nKind regards,\n[Your Name]\n[Your Contact Number]`
+    `Dear Star Rental Club Team,\n\nI am interested in hiring the ${vehicle.name} (${vehicle.type}, ${vehicle.seats}-seater, ${vehicle.transmission}, ${vehicle.fuelType}) at the weekly rate of $${weeklyRate}/day.\n\nCould you please confirm availability and provide details on the booking process, required documents, and any applicable terms?\n\nPreferred pick-up date: \nPreferred return date: \nPick-up location: \n\nI look forward to hearing from you.\n\nKind regards,\n[Your Name]\n[Your Contact Number]`
   )}`;
   const vehicleButtonStyle = {
     "--vehicle-button-color": vehicleAccent,

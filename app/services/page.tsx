@@ -21,7 +21,7 @@ import {
 export const metadata: Metadata = {
   title: "Car Rental Services",
   description:
-    "Explore Land Star car rental services for daily, weekly, and long-term hire. Compare practical vehicle hire options for families, business use, airport travel, and replacement transport.",
+    "Explore Star Rental Club car hire services — daily, weekly, and long-term vehicle rental in Perth for families, business, airport travel, and replacement transport.",
   keywords: [
     "car rental services",
     "daily car rental",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "airport car rental services",
   ],
   openGraph: {
-    title: "Car Rental Services | Land Star Car Rental",
+    title: "Car Rental Services Perth | Star Rental Club",
     description:
       "Daily, weekly, and long-term vehicle hire for local travel, family trips, airport pickup needs, business use, and replacement transport.",
   },
@@ -167,7 +167,7 @@ const servicesFaqs = [
   {
     question: "Do you offer daily and weekly car rental?",
     answer:
-      "Yes. Land Star supports both daily and weekly car hire, making it easier to book transport for short local use, holidays, or temporary travel needs.",
+      "Yes. Star Rental Club supports both daily and weekly car hire, making it easier to book transport for short local use, holidays, or temporary travel needs.",
   },
   {
     question: "Can I enquire about long-term vehicle hire?",

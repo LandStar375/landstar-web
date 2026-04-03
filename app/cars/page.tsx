@@ -7,19 +7,20 @@ import { BUSINESS } from "@/data/constants";
 export const metadata: Metadata = {
   title: "Our Fleet",
   description:
-    "Browse the full range of Land Star rental vehicles — sedans, SUVs, utes, and people movers available for hire across Australia.",
+    "Browse the full range of Star Rental Club vehicles — sedans, SUVs, utes, and people movers available for hire in Perth, WA.",
   keywords: [
     "rental cars Perth",
-    "hire car fleet",
-    "SUV rental Cannington",
-    "ute hire Perth",
-    "sedan rental WA",
-    "people mover hire",
+    "hire car fleet Cannington",
+    "SUV rental Perth",
+    "ute hire Western Australia",
+    "sedan rental Cannington WA",
+    "people mover hire Perth",
+    "Star Rental Club fleet",
   ],
   openGraph: {
-    title: "Our Fleet | Land Star Car Rental",
+    title: "Our Fleet – Rental Cars Perth | Star Rental Club",
     description:
-      "Browse the full range of Land Star rental vehicles — sedans, SUVs, utes, and people movers available for hire across Australia.",
+      "Browse the full range of Star Rental Club vehicles — sedans, SUVs, utes, and people movers available for hire in Perth, WA.",
   },
   alternates: {
     canonical: "https://starrental.com.au/cars",

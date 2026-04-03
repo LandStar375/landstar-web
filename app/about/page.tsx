@@ -13,20 +13,20 @@ import {
 } from "react-icons/hi2";
 
 export const metadata: Metadata = {
-  title: "About Land Star Car Rental",
+  title: "About Star Rental Club – Car Hire Cannington, Perth",
   description:
-    "Learn about Land Star Car Rental, a Cannington-based car rental business focused on reliable vehicles, transparent pricing, flexible hire terms, and customer-first service.",
+    "Learn about Star Rental Club, a Cannington-based car rental business offering reliable vehicles, transparent pricing, flexible hire terms, and friendly service in Perth, WA.",
   keywords: [
-    "about Land Star Car Rental",
+    "about Star Rental Club",
     "car rental company Cannington",
-    "about car hire Cannington",
+    "car hire business Perth",
     "reliable car rental Australia",
     "family and business car hire",
   ],
   openGraph: {
-    title: "About Land Star Car Rental",
+    title: "About Star Rental Club – Car Hire Cannington, Perth",
     description:
-      "Learn how Land Star Car Rental helps drivers, families, and business customers with reliable vehicles, clear pricing, and flexible car hire.",
+      "Learn how Star Rental Club helps drivers, families, and business customers with reliable vehicles, clear pricing, and flexible car hire in Perth.",
   },
   alternates: {
     canonical: "https://starrental.com.au/about",
@@ -110,21 +110,21 @@ const audienceCards = [
 
 const aboutFaqs = [
   {
-    question: "Where is Land Star Car Rental based?",
-    answer: `Land Star Car Rental is based at ${BUSINESS.location}. Customers can contact us directly for availability, pricing, and pickup information.`,
+    question: "Where is Star Rental Club based?",
+    answer: `Star Rental Club is based at ${BUSINESS.location}. Customers can contact us directly for availability, pricing, and pickup information.`,
   },
   {
-    question: "What types of vehicles does Land Star offer?",
+    question: "What types of vehicles does Star Rental Club offer?",
     answer:
       "We offer a practical range that includes sedans, hatchbacks, SUVs, utes, and people movers for local travel, family use, and business needs.",
   },
   {
-    question: "What makes Land Star different from other car rental companies?",
+    question: "What makes Star Rental Club different from other car rental companies?",
     answer:
       "Our focus is on reliable vehicles, straightforward communication, flexible hire options, and transparent pricing that helps customers book with confidence.",
   },
   {
-    question: "How can I contact Land Star Car Rental?",
+    question: "How can I contact Star Rental Club?",
     answer:
       "You can contact us by phone, email, or through the website contact form to ask about vehicle availability, pricing, and booking details.",
   },
@@ -170,7 +170,7 @@ export default function AboutPage() {
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
               <Image
                 src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=800&h=600&fit=crop"
-                alt="Land Star Car Rental office and customer service setting"
+                alt="Star Rental Club office and customer service setting"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
