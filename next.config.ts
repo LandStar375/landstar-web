@@ -1,14 +1,22 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  images: {
-    remotePatterns: [
+  async redirects() {
+    return [
       {
-        protocol: "https",
-        hostname: "images.unsplash.com",
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "www.starrental.com.au",
+          },
+        ],
+        destination: "https://starrental.com.au/:path*",
+        permanent: true,
       },
-    ],
+    ];
   },
+  images: {},
   turbopack: {},
 };
 

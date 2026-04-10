@@ -13,27 +13,32 @@ import {
 } from "react-icons/hi2";
 
 export const metadata: Metadata = {
-  title: "About Star Rental Club – Car Hire Cannington, Perth",
+  title: "About Star Rental Club | Car Rental in Cannington & Perth",
   description:
-    "Learn about Star Rental Club, a Cannington-based car rental business offering reliable vehicles, transparent pricing, flexible hire terms, and friendly service in Perth, WA.",
+    "Learn about Star Rental Club, a Cannington-based car rental service providing reliable vehicles, transparent pricing, and flexible car hire across Perth and surrounding areas.",
   keywords: [
     "about Star Rental Club",
-    "car rental company Cannington",
+    "car rental Cannington",
     "car hire business Perth",
-    "reliable car rental Australia",
-    "family and business car hire",
+    "reliable car rental Perth",
+    "family and business car hire Perth",
+    "East Cannington car rental",
   ],
   openGraph: {
-    title: "About Star Rental Club – Car Hire Cannington, Perth",
+    title: "About Star Rental Club | Car Rental in Cannington & Perth",
     description:
-      "Learn how Star Rental Club helps drivers, families, and business customers with reliable vehicles, clear pricing, and flexible car hire in Perth.",
+      "Learn about Star Rental Club, a Cannington-based car rental service providing reliable vehicles, transparent pricing, and flexible car hire across Perth and surrounding areas.",
+    images: [
+      {
+        url: "/images/hero-bg.jpg",
+        width: 1200,
+        height: 630,
+        alt: "About Star Rental Club – Car Rental Perth",
+      },
+    ],
   },
   alternates: {
     canonical: "https://starrental.com.au/about",
-  },
-  robots: {
-    index: true,
-    follow: true,
   },
 };
 
@@ -42,46 +47,46 @@ const offeringCards = [
     icon: <HiOutlineTruck className="h-6 w-6" />,
     title: "Wide Vehicle Range",
     description:
-      "Choose from sedans, hatchbacks, SUVs, utes, and people movers for daily travel, family plans, and practical work use.",
+      "Choose from sedans, SUVs, utes, and family cars for daily travel, weekend plans, and practical work use across Perth.",
   },
   {
     icon: <HiOutlineCurrencyDollar className="h-6 w-6" />,
-    title: "Clear Pricing",
+    title: "Transparent Pricing",
     description:
-      "Our approach to car hire is straightforward, with transparent pricing and no unnecessary confusion around the rental process.",
+      "No confusion, no hidden fees. Our car hire pricing is upfront and clear so you know exactly what you're paying before you book.",
   },
   {
     icon: <HiOutlineCalendar className="h-6 w-6" />,
-    title: "Flexible Rental Terms",
+    title: "Flexible Rental Options",
     description:
-      "We support short-term and longer vehicle hire needs, making it easier to arrange a rental that fits your schedule.",
+      "Daily, weekly, or long-term — we offer flexible car rental terms that fit your schedule, whether it's a quick errand or an extended trip.",
   },
   {
     icon: <HiOutlineUserGroup className="h-6 w-6" />,
-    title: "Friendly Support",
+    title: "Friendly Customer Support",
     description:
-      "Our team focuses on responsive communication so customers can ask questions, confirm availability, and plan with confidence.",
+      "Our team is responsive and easy to reach. Ask questions, confirm availability, and plan your rental with confidence.",
   },
 ];
 
 const valueCards = [
   {
     icon: <HiOutlineShieldCheck className="h-7 w-7" />,
-    title: "Reliability",
+    title: "Reliable Vehicles",
     description:
-      "We focus on clean, well-presented vehicles and a rental process that feels dependable from the first enquiry to pickup.",
+      "Every car in our fleet is well-maintained and ready to go. We focus on clean, dependable vehicles you can trust from pickup to return.",
   },
   {
     icon: <HiOutlineEye className="h-7 w-7" />,
-    title: "Transparency",
+    title: "Clear Communication",
     description:
-      "Customers should understand what they are booking, what the vehicle suits, and how to contact us without chasing hidden details.",
+      "No runarounds. We keep things honest and straightforward so you always know what you're booking, what it costs, and how to reach us.",
   },
   {
     icon: <HiOutlineHeart className="h-7 w-7" />,
-    title: "Customer First",
+    title: "Customer-First Approach",
     description:
-      "We aim to help local drivers, business customers, families, and visitors find practical vehicle hire options without unnecessary friction.",
+      "We put your needs first — whether you're a local driver, a family planning a trip, or a business needing reliable transport in Perth.",
   },
 ];
 
@@ -89,44 +94,45 @@ const audienceCards = [
   {
     title: "Local Drivers",
     description:
-      "Need a practical rental for errands, appointments, or temporary transport? We provide straightforward car hire for local driving needs.",
+      "Need a practical rental for errands, appointments, or daily commutes? We provide straightforward car hire for everyday transport across Perth.",
   },
   {
-    title: "Family Travel",
+    title: "Families",
     description:
-      "From SUVs to people movers, we help families book vehicles with the space and comfort needed for day trips and longer drives.",
+      "From SUVs to people movers, we help families book vehicles with the space and comfort needed for trips, holidays, and weekend travel.",
   },
   {
-    title: "Business Use",
+    title: "Businesses",
     description:
-      "Businesses and professionals can arrange reliable vehicle hire for meetings, site visits, team movement, and temporary transport support.",
+      "Professionals and teams can arrange reliable vehicle hire for meetings, site visits, staff movement, and temporary business transport.",
   },
   {
-    title: "Flexible Enquiries",
+    title: "Visitors to Perth",
     description:
-      `Based at ${BUSINESS.location}, we also support ${BUSINESS.serviceArea.toLowerCase()} through direct phone and email contact.`,
+      "Visiting Perth and need temporary wheels? We offer flexible car hire from East Cannington with easy phone and email booking.",
   },
 ];
 
 const aboutFaqs = [
   {
     question: "Where is Star Rental Club based?",
-    answer: `Star Rental Club is based at ${BUSINESS.location}. Customers can contact us directly for availability, pricing, and pickup information.`,
+    answer:
+      "Star Rental Club is based in East Cannington, Perth. Customers can contact us directly for availability, pricing, and pickup information.",
   },
   {
     question: "What types of vehicles does Star Rental Club offer?",
     answer:
-      "We offer a practical range that includes sedans, hatchbacks, SUVs, utes, and people movers for local travel, family use, and business needs.",
+      "We offer a wide range including sedans, SUVs, utes, hatchbacks, and people movers for local travel, family use, and business needs across Perth.",
   },
   {
     question: "What makes Star Rental Club different from other car rental companies?",
     answer:
-      "Our focus is on reliable vehicles, straightforward communication, flexible hire options, and transparent pricing that helps customers book with confidence.",
+      "We focus on reliable vehicles, clear and honest communication, flexible hire options, and transparent pricing that helps customers book with confidence.",
   },
   {
     question: "How can I contact Star Rental Club?",
     answer:
-      "You can contact us by phone, email, or through the website contact form to ask about vehicle availability, pricing, and booking details.",
+      "You can reach us by phone, email, or through our website contact form to ask about vehicle availability, pricing, and booking details.",
   },
 ];
 
@@ -154,12 +160,14 @@ export default function AboutPage() {
       <section className="bg-gradient-to-br from-brand-900 via-brand-800 to-brand-600 px-4 py-12 text-white sm:px-6 sm:py-16 md:px-12">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl">
-            About {BUSINESS.name} Car Rental
+            About Star Rental Club – Car Rental in Perth
           </h1>
           <p className="mx-auto mt-3 max-w-3xl text-base text-brand-100 sm:mt-4 sm:text-lg">
-            Learn more about {BUSINESS.name}, a car rental business focused on
-            reliable vehicles, flexible car hire, and straightforward service
-            for local drivers, families, business customers, and visitors.
+            Star Rental Club is a trusted car rental service based in East
+            Cannington, Perth, providing reliable and affordable vehicle hire
+            for local drivers, families, and businesses. Our goal is to make
+            car rental simple, clear, and accessible for customers across Perth
+            and surrounding areas.
           </p>
         </div>
       </section>
@@ -169,7 +177,7 @@ export default function AboutPage() {
           <ScrollReveal animation="fade-right">
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
               <Image
-                src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=800&h=600&fit=crop"
+                src="/images/about-office.jpg"
                 alt="Star Rental Club office and customer service setting"
                 fill
                 className="object-cover"
@@ -184,19 +192,18 @@ export default function AboutPage() {
                 Our Story
               </p>
               <h2 className="mt-2 text-2xl font-bold text-gray-900 md:text-3xl">
-                A Practical Approach to Car Rental
+                Our Story
               </h2>
               <p className="mt-4 leading-8 text-gray-600">
-                {BUSINESS.name} was built around a simple goal: make vehicle hire
-                easier to understand and easier to arrange. Customers searching
-                for car rental in Cannington or flexible car hire support want a
-                team that answers clearly, offers suitable vehicles, and keeps
-                the process moving.
+                Star Rental Club was built around a simple idea: car rental should
+                be easy to understand and easy to arrange. Many customers struggle
+                with confusing pricing and unclear booking processes, so we focus
+                on transparency, communication, and practical vehicle options.
               </p>
               <p className="mt-4 leading-8 text-gray-600">
-                Based at {BUSINESS.location}, we help drivers compare vehicle
-                types, discuss travel needs, and arrange rentals for city use,
-                family travel, business movement, and general transport needs.
+                Based in East Cannington, we help customers choose the right
+                vehicles for daily travel, family trips, business use, and
+                temporary transport needs across Perth.
               </p>
             </div>
           </ScrollReveal>
@@ -224,7 +231,7 @@ export default function AboutPage() {
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
             {offeringCards.map((card, index) => (
               <ScrollReveal key={card.title} animation="fade-up" delay={index * 100}>
-                <article className="rounded-2xl bg-white p-6 shadow-sm">
+                <article className="flex h-full flex-col rounded-2xl bg-white p-6 shadow-sm">
                   <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-700">
                     {card.icon}
                   </div>
@@ -294,7 +301,7 @@ export default function AboutPage() {
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
             {audienceCards.map((card, index) => (
               <ScrollReveal key={card.title} animation="fade-up" delay={index * 100}>
-                <article className="rounded-2xl bg-white p-6 shadow-sm">
+                <article className="flex h-full flex-col rounded-2xl bg-white p-6 shadow-sm">
                   <h3 className="text-lg font-semibold text-gray-900">
                     {card.title}
                   </h3>
@@ -338,11 +345,11 @@ export default function AboutPage() {
         <ScrollReveal animation="fade-up">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="text-3xl font-bold md:text-4xl">
-              Looking for Reliable Car Rental Support?
+              Looking for Reliable Car Rental in Perth?
             </h2>
             <p className="mx-auto mt-3 max-w-2xl text-lg text-brand-100">
-              Contact {BUSINESS.name} to discuss vehicle options, pricing, and
-              booking details for your next rental.
+              Contact Star Rental Club to discuss vehicle options, pricing, and
+              booking details for your next rental in Perth.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <a

@@ -19,22 +19,32 @@ import {
 } from "react-icons/hi2";
 
 export const metadata: Metadata = {
-  title: "Car Rental Services",
+  title: "Car Rental Services Perth | Daily, Weekly & Long Term Hire",
   description:
-    "Explore Star Rental Club car hire services — daily, weekly, and long-term vehicle rental in Perth for families, business, airport travel, and replacement transport.",
+    "Explore car rental services in Perth with Star Rental Club. Daily, weekly, and long-term car hire available in East Cannington and surrounding suburbs.",
   keywords: [
-    "car rental services",
-    "daily car rental",
-    "weekly car hire",
-    "long-term car rental",
-    "business car hire",
-    "replacement vehicle rental",
-    "airport car rental services",
+    "car rental services Perth",
+    "vehicle hire Perth",
+    "car hire East Cannington",
+    "long term car rental Perth",
+    "daily car rental Perth",
+    "weekly car hire Perth",
+    "business car rental Perth",
+    "replacement vehicle rental Perth",
+    "airport car rental Perth",
   ],
   openGraph: {
-    title: "Car Rental Services Perth | Star Rental Club",
+    title: "Car Rental Services Perth | Daily, Weekly & Long Term Hire | Star Rental Club",
     description:
-      "Daily, weekly, and long-term vehicle hire for local travel, family trips, airport pickup needs, business use, and replacement transport.",
+      "Explore car rental services in Perth with Star Rental Club. Daily, weekly, and long-term car hire available in East Cannington and surrounding suburbs.",
+    images: [
+      {
+        url: "/images/hero-bg.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Star Rental Club – Car Rental Services Perth",
+      },
+    ],
   },
   alternates: {
     canonical: "https://starrental.com.au/services",
@@ -48,45 +58,45 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: <HiOutlineClock className="h-6 w-6" />,
-    title: "Daily Car Rental",
+    title: "Daily Car Rental Perth",
     description:
-      "Daily car rental is ideal when you need a practical vehicle for errands, appointments, short business travel, or same-week plans without committing to a longer hire period.",
-    features: ["Flexible pickup planning", "Competitive short-term hire", "Practical vehicle choices"],
+      "Need a car for a day? Our daily car rental Perth service offers affordable rates for errands, appointments, short business trips, and same-day transport needs across Perth.",
+    features: ["Competitive daily rates", "Quick and easy booking", "Wide vehicle selection"],
   },
   {
     icon: <HiOutlineCalendar className="h-6 w-6" />,
-    title: "Weekly Car Hire",
+    title: "Weekly Car Hire Perth",
     description:
-      "Weekly car hire gives customers more flexibility for holidays, family travel, temporary transport, and longer local driving needs.",
-    features: ["Better value for longer use", "Suitable for family trips", "Simple booking by phone or email"],
+      "Save more with weekly car hire in Perth. Ideal for holidays, extended work trips, family travel, or anytime you need reliable transport for several days running.",
+    features: ["Better value per day", "Great for holidays", "Simple phone or email booking"],
   },
   {
     icon: <HiOutlineDocumentText className="h-6 w-6" />,
-    title: "Long-Term Vehicle Hire",
+    title: "Long-Term Car Rental Perth",
     description:
-      "If you need transport for an extended period, long-term vehicle hire helps bridge ongoing travel needs with practical rental terms.",
-    features: ["Useful for temporary transport gaps", "Flexible scheduling", "Clear rental communication"],
+      "Looking for long-term vehicle hire in Perth? We offer flexible, cost-effective car rental without lock-in contracts — perfect for extended personal or work use.",
+    features: ["No unnecessary contracts", "Flexible scheduling", "Consistent affordable pricing"],
   },
   {
     icon: <HiOutlineBriefcase className="h-6 w-6" />,
-    title: "Business Rentals",
+    title: "Business Car Rental",
     description:
-      "Business car rental supports site visits, meetings, staff transport, and day-to-day work travel with dependable vehicle options.",
-    features: ["Suitable for professionals and teams", "Straightforward contact process", "Practical fleet options"],
+      "Reliable business car rental for Perth professionals. Whether it's client meetings, site visits, or daily operations, we keep your team moving with dependable vehicles.",
+    features: ["Professional fleet options", "Straightforward booking", "Suitable for teams"],
   },
   {
     icon: <HiOutlineGlobeAlt className="h-6 w-6" />,
-    title: "Airport and Travel Support",
+    title: "Airport Transfer & Travel Support",
     description:
-      "Travel plans often need flexible transport. We help customers arrange vehicle hire that suits airport pickups, visitor travel, and trip planning.",
-    features: ["Helpful for visitor travel", "Flexible contact-based planning", "Vehicle options for different trip types"],
+      "Arriving in Perth or picking someone up? Our vehicle hire makes airport transfers and visitor travel easy with flexible scheduling and a range of comfortable cars.",
+    features: ["Flexible pickup times", "Visitor-friendly service", "Multiple vehicle options"],
   },
   {
     icon: <HiOutlineRefresh className="h-6 w-6" />,
-    title: "Replacement Transport",
+    title: "Replacement Vehicle Services",
     description:
-      "When your own vehicle is unavailable, replacement transport can help keep work, family, and daily plans moving with less disruption.",
-    features: ["Useful during repairs or servicing", "Short-term or extended enquiries", "Responsive booking support"],
+      "Car in the shop? Our replacement vehicle service keeps you on the road while your own car is being repaired or serviced — no disruption to your daily routine.",
+    features: ["Available during repairs", "Short or extended hire", "Fast and responsive support"],
   },
 ];
 
@@ -94,47 +104,47 @@ const vehicleTypes = [
   {
     type: "Sedans",
     description:
-      "Comfortable and efficient for local driving, weekday travel, and business use.",
-    image: "https://images.unsplash.com/photo-1623869675781-80aa31012a5a?w=600&h=400&fit=crop",
+      "Fuel-efficient sedans perfect for Perth city driving, daily commutes, and professional business travel.",
+    image: "/images/cars/toyota_camry.png",
   },
   {
     type: "SUVs",
     description:
-      "A practical option for family trips, weekend plans, and customers wanting extra comfort.",
-    image: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=600&h=400&fit=crop",
+      "Spacious SUVs built for family road trips, weekend getaways, and comfortable long-distance journeys.",
+    image: "/images/cars/mazda_cx8.png",
   },
   {
     type: "Utes",
     description:
-      "Useful for work needs, site visits, gear transport, and practical carrying capacity.",
-    image: "https://images.unsplash.com/photo-1559416523-140ddc3d238c?w=600&h=400&fit=crop",
+      "Tough and reliable utes for tradies, job sites, heavy gear transport, and practical work use across Perth.",
+    image: "/images/cars/hilux.png",
   },
   {
-    type: "People Movers and Hatchbacks",
+    type: "Hatchbacks & People Movers",
     description:
-      "Suitable for either extra passenger space or smaller local driving needs, depending on the trip.",
-    image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&h=400&fit=crop",
+      "Budget-friendly hatchbacks for quick errands or roomy people movers for group and family travel.",
+    image: "/images/cars/KIA Carnival.png",
   },
 ];
 
 const useCases = [
   {
-    title: "Family Travel",
+    title: "Family Travel & Weekend Trips",
     description:
       "Customers planning weekend trips, school holiday travel, or airport pickups often need a vehicle with more space and comfort.",
   },
   {
-    title: "Business and Work Use",
+    title: "Business & Work-Related Transport",
     description:
-      "Professionals and trades need vehicle hire for meetings, local travel, and practical day-to-day work requirements.",
+      "Professionals and trades need vehicle hire for meetings, site visits, local travel, and practical day-to-day work requirements.",
   },
   {
-    title: "Short-Term Local Driving",
+    title: "Temporary Transport Needs",
     description:
       "Daily and weekly rentals help when you need temporary transport without the complexity of a long booking process.",
   },
   {
-    title: "Replacement Vehicle Needs",
+    title: "Replacement Vehicles During Repairs",
     description:
       "A rental can bridge the gap while your own car is being repaired, serviced, or temporarily unavailable.",
   },
@@ -165,19 +175,29 @@ const steps = [
 
 const servicesFaqs = [
   {
-    question: "Do you offer daily and weekly car rental?",
+    question: "Do you offer car rental in East Cannington?",
     answer:
-      "Yes. Star Rental Club supports both daily and weekly car hire, making it easier to book transport for short local use, holidays, or temporary travel needs.",
+      "Yes, Star Rental Club is based in East Cannington and serves all nearby Perth areas including Perth CBD, Cannington, Victoria Park, Bentley, and surrounding suburbs.",
   },
   {
-    question: "Can I enquire about long-term vehicle hire?",
+    question: "Can I rent a car for long-term use?",
     answer:
-      "Yes. If you need a rental for an extended period, contact us directly so we can discuss vehicle options and your preferred schedule.",
+      "Yes. We provide flexible long-term car rental options in Perth. Contact us directly so we can discuss vehicle options and your preferred schedule.",
+  },
+  {
+    question: "Do you offer affordable car hire?",
+    answer:
+      "Yes, we focus on budget-friendly car rental services in Perth without hidden charges. Our pricing is transparent across daily, weekly, and long-term hire.",
   },
   {
     question: "What vehicle types are available for rental?",
     answer:
       "Our rental options include sedans, hatchbacks, SUVs, utes, and people movers, depending on the type of trip or transport need you have.",
+  },
+  {
+    question: "Do you offer daily and weekly car rental?",
+    answer:
+      "Yes. Star Rental Club supports both daily and weekly car hire, making it easier to book transport for short local use, holidays, or temporary travel needs.",
   },
   {
     question: "How do I request a quote for car rental services?",
@@ -210,12 +230,13 @@ export default function ServicesPage() {
       <section className="bg-gradient-to-br from-brand-900 via-brand-800 to-brand-600 px-4 py-12 text-white sm:px-6 sm:py-16 md:px-12">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl">
-            Car Rental Services for Different Travel Needs
+            Car Rental Services in Perth for Every Travel Need
           </h1>
           <p className="mx-auto mt-3 max-w-3xl text-base text-brand-100 sm:mt-4 sm:text-lg">
-            Explore daily, weekly, and long-term vehicle hire from {BUSINESS.name}
-            for local driving, family trips, business transport, travel support,
-            and replacement vehicle needs.
+            Explore flexible and affordable car rental services in Perth with{" "}
+            {BUSINESS.name}. Daily, weekly, and long-term vehicle hire for
+            individuals, families, and businesses across East Cannington and
+            surrounding Perth areas.
           </p>
         </div>
       </section>
@@ -228,13 +249,12 @@ export default function ServicesPage() {
                 Service Overview
               </p>
               <h2 className="mt-2 text-2xl font-bold text-gray-900 md:text-3xl">
-                Flexible Vehicle Hire Without Unnecessary Complexity
+                Flexible Car Rental Services Without Complication
               </h2>
               <p className="mx-auto mt-4 max-w-3xl text-lg text-gray-600">
-                Many customers looking for car rental services are comparing more
-                than just price. They also want the right vehicle type, clear
-                communication, flexible hire options, and a booking process that
-                feels practical from start to finish.
+                Finding the right car rental in Perth should be simple. At Star
+                Rental Club, we offer clear pricing, easy booking, and reliable
+                vehicles so you can focus on your journey instead of the process.
               </p>
             </div>
           </ScrollReveal>
@@ -257,7 +277,7 @@ export default function ServicesPage() {
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service, index) => (
               <ScrollReveal key={service.title} animation="fade-up" delay={index * 100}>
-                <article className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
+                <article className="flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
                   <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-700">
                     {service.icon}
                   </div>
@@ -267,7 +287,7 @@ export default function ServicesPage() {
                   <p className="mt-2 text-sm leading-7 text-gray-600">
                     {service.description}
                   </p>
-                  <ul className="mt-4 space-y-2">
+                  <ul className="mt-auto space-y-2 pt-4">
                     {service.features.map((feature) => (
                       <li
                         key={feature}
@@ -293,12 +313,12 @@ export default function ServicesPage() {
                 Common Use Cases
               </p>
               <h2 className="mt-2 text-2xl font-bold text-gray-900 md:text-3xl">
-                Which Rental Service Is Right for You?
+                Car Rental Services for Different Needs
               </h2>
               <p className="mx-auto mt-4 max-w-3xl text-lg text-gray-600">
-                Different customers rent for different reasons. These are some of
-                the most common situations where a practical vehicle hire option
-                makes a real difference.
+                Our car rental services in Perth are designed for different
+                situations. Here are some of the most common reasons customers
+                choose Star Rental Club.
               </p>
             </div>
           </ScrollReveal>
@@ -306,11 +326,11 @@ export default function ServicesPage() {
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
             {useCases.map((useCase, index) => (
               <ScrollReveal key={useCase.title} animation="fade-up" delay={index * 100}>
-                <article className="rounded-2xl bg-white p-6 shadow-sm">
+                <article className="flex h-full flex-col rounded-2xl bg-white p-6 shadow-sm">
                   <h3 className="text-lg font-semibold text-gray-900">
                     {useCase.title}
                   </h3>
-                  <p className="mt-3 leading-7 text-gray-600">{useCase.description}</p>
+                  <p className="mt-3 flex-1 leading-7 text-gray-600">{useCase.description}</p>
                 </article>
               </ScrollReveal>
             ))}
@@ -337,13 +357,13 @@ export default function ServicesPage() {
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {vehicleTypes.map((vehicleType, index) => (
               <ScrollReveal key={vehicleType.type} animation="fade-up" delay={index * 100}>
-                <article className="overflow-hidden rounded-2xl bg-white shadow-sm transition-shadow hover:shadow-md">
-                  <div className="relative aspect-[3/2]">
+                <article className="flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-sm transition-shadow hover:shadow-md">
+                  <div className="relative aspect-[3/2] bg-gradient-to-br from-slate-50 to-slate-100">
                     <Image
                       src={vehicleType.image}
-                      alt={vehicleType.type}
+                      alt={`${vehicleType.type} for hire in Perth – Star Rental Club`}
                       fill
-                      className="object-cover"
+                      className="object-contain p-4"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     />
                   </div>
@@ -374,7 +394,7 @@ export default function ServicesPage() {
                 How It Works
               </p>
               <h2 className="mt-2 text-2xl font-bold text-gray-900 md:text-3xl">
-                A Simple Booking Process for Vehicle Hire
+                Simple Car Rental Process in Perth
               </h2>
             </div>
           </ScrollReveal>
@@ -422,6 +442,37 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+
+      <ScrollReveal animation="fade-up">
+        <section className="bg-gray-50 px-6 py-16 md:px-12">
+          <div className="mx-auto max-w-5xl">
+            <div className="text-center">
+              <p className="text-sm font-semibold uppercase tracking-widest text-brand-700">
+                Service Area
+              </p>
+              <h2 className="mt-2 text-2xl font-bold text-gray-900 md:text-3xl">
+                Car Rental Services Across Perth
+              </h2>
+              <p className="mt-4 text-lg text-gray-600">
+                Star Rental Club is based in East Cannington, Western Australia,
+                and provides car rental services across:
+              </p>
+            </div>
+            <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
+              {["Perth CBD", "East Cannington", "Cannington", "Victoria Park", "Bentley", "Surrounding Suburbs"].map(
+                (area) => (
+                  <div
+                    key={area}
+                    className="rounded-2xl border border-gray-200 bg-white px-4 py-5 text-center shadow-sm"
+                  >
+                    <p className="text-sm font-semibold text-gray-900">{area}</p>
+                  </div>
+                )
+              )}
+            </div>
+          </div>
+        </section>
+      </ScrollReveal>
 
       <section className="bg-brand-700 px-6 py-16 text-white md:px-12">
         <ScrollReveal animation="fade-up">

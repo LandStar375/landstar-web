@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const businessName = "Star Rental Club";
 
 const responsibilities = [
-  "The vehicle must be returned to the Star Rental Club yard at 92 Mallard Way Cannington 6107 WA at the agreed time.",
+  "The vehicle must be returned to the Star Rental Club yard at 92 Mallard Way, East Cannington WA 6107 at the agreed time.",
   "Driving under the influence of alcohol or drugs is prohibited.",
   "The renter and any additional drivers must hold valid driver licenses.",
   "The renter is responsible for any breach of these terms by an additional driver.",

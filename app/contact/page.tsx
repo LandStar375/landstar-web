@@ -4,19 +4,28 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { BUSINESS } from "@/data/constants";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
+  title: "Contact Star Rental Club | Car Rental Perth & Cannington",
   description:
-    "Get in touch with Star Rental Club in Cannington, Perth. Call, email, or send us a message to book your next rental car.",
+    "Contact Star Rental Club for affordable car rental in Perth and East Cannington. Call, email, or send an enquiry to book your vehicle today.",
   keywords: [
     "contact Star Rental Club",
     "car rental enquiry Perth",
-    "book a rental car Cannington",
+    "book a rental car East Cannington",
     "car hire contact Perth WA",
+    "car rental Perth contact",
   ],
   openGraph: {
-    title: "Contact Us – Book a Car | Star Rental Club Perth",
+    title: "Contact Star Rental Club | Car Rental Perth & Cannington",
     description:
-      "Get in touch with Star Rental Club in Cannington, Perth. Call, email, or send us a message to book your next rental car.",
+      "Contact Star Rental Club for affordable car rental in Perth and East Cannington. Call, email, or send an enquiry to book your vehicle today.",
+    images: [
+      {
+        url: "/images/hero-bg.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Contact Star Rental Club – Car Rental Perth",
+      },
+    ],
   },
   alternates: {
     canonical: "https://starrental.com.au/contact",
@@ -44,10 +53,12 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
       <section className="bg-gradient-to-br from-brand-900 via-brand-800 to-brand-600 px-4 py-12 text-white sm:px-6 sm:py-16 md:px-12">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl">
-            Get in Touch
+            Contact Star Rental Club – Car Rental in Perth
           </h1>
           <p className="mx-auto mt-3 max-w-2xl text-base text-brand-100 sm:mt-4 sm:text-lg">
-            Have a question or ready to book? We&apos;d love to hear from you.
+            Looking for car rental in Perth or East Cannington? Contact us for
+            reliable and affordable vehicle hire. Whether you need a sedan, SUV,
+            ute, or family vehicle, our team is ready to help.
           </p>
         </div>
       </section>
@@ -57,10 +68,11 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
           <ScrollReveal animation="fade-right" className="lg:col-span-3">
             <div>
               <h2 className="mb-2 text-2xl font-bold text-gray-900">
-                Send Us a Message
+                Send Us an Enquiry
               </h2>
               <p className="mb-8 text-gray-500">
-                Fill out the form and we&apos;ll get back to you within 24 hours.
+                Fill out the form or reach out directly using the details beside.
+                Our team typically responds within 24 hours.
               </p>
               <ContactForm
                 key={`${selectedVehicle}-${selectedPrice}`}
@@ -99,21 +111,12 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
                     </a>
                   </li>
                   <li>
-                    <p className="text-xs uppercase tracking-wide text-gray-500">Info Email</p>
+                    <p className="text-xs uppercase tracking-wide text-gray-500">Email</p>
                     <a
                       href={`mailto:${BUSINESS.email}`}
                       className="inline-flex min-h-[44px] items-center font-medium text-brand-700 hover:underline"
                     >
                       {BUSINESS.email}
-                    </a>
-                  </li>
-                  <li>
-                    <p className="text-xs uppercase tracking-wide text-gray-500">Booking Email</p>
-                    <a
-                      href={`mailto:${BUSINESS.bookingEmail}`}
-                      className="inline-flex min-h-[44px] items-center font-medium text-brand-700 hover:underline"
-                    >
-                      {BUSINESS.bookingEmail}
                     </a>
                   </li>
                   <li>
@@ -131,9 +134,10 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
               </div>
 
               <div className="rounded-xl bg-brand-700 p-6 text-center text-white">
-                <p className="text-lg font-semibold">Need a car urgently?</p>
+                <p className="text-lg font-semibold">Need a car rental in Perth today?</p>
                 <p className="mt-2 text-sm text-brand-100">
-                  Call us directly for same-day availability.
+                  Call us now for same-day availability or send an enquiry
+                  through the form to get started.
                 </p>
                 <a
                   href={`tel:${BUSINESS.phoneHref}`}

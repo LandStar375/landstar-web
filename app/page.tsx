@@ -9,21 +9,31 @@ import { BUSINESS } from "@/data/constants";
 import { HiOutlineClock, HiOutlineGlobeAlt, HiOutlineMapPin } from "react-icons/hi2";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "Car Rental Perth | Affordable Car Hire Perth",
   description:
-    "Star Rental Club – reliable, affordable car hire in Perth with flexible pickup, clear pricing, and a fleet for every trip.",
+    "Looking for car rental Perth? Star Rental Club offers affordable and reliable car hire in East Cannington, Perth CBD, and surrounding suburbs. Browse sedans, SUVs, utes, and family vehicles.",
   keywords: [
     "car rental Perth",
-    "affordable car hire Cannington",
-    "rent a car Perth WA",
-    "cheap car rental Western Australia",
+    "car hire Perth",
+    "car hire East Cannington",
+    "Perth CBD car rental",
     "Star Rental Club",
     "daily weekly car hire Perth",
+    "affordable car rental Perth",
+    "reliable car hire WA",
   ],
   openGraph: {
-    title: "Star Rental Club – Affordable Car Hire in Perth, Australia",
+    title: "Car Rental Perth | Affordable Car Hire Perth | Star Rental Club",
     description:
-      "Star Rental Club – reliable, affordable car hire in Perth with flexible pickup, clear pricing, and a fleet for every trip.",
+      "Looking for car rental Perth? Star Rental Club offers affordable and reliable car hire in East Cannington, Perth CBD, and surrounding suburbs.",
+    images: [
+      {
+        url: "/images/hero-bg.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Star Rental Club – Affordable Car Rental Perth",
+      },
+    ],
   },
   alternates: {
     canonical: "https://starrental.com.au",
@@ -56,18 +66,24 @@ const testimonials = [
       "The process was easy from the first call. The Corolla was clean, reliable, and exactly what I needed for a week of local travel.",
     name: "Sarah M.",
     detail: "Sedan rental for weekday travel",
+    rating: 5,
+    timeAgo: "2 weeks ago",
   },
   {
     quote:
       "We needed extra space for a family trip and the Tucson was perfect. Clear pricing, quick replies, and no last-minute hassle.",
     name: "James T.",
     detail: "SUV rental for a weekend getaway",
+    rating: 5,
+    timeAgo: "1 month ago",
   },
   {
     quote:
       "Booked a ute for work use and everything was straightforward. Good vehicle, fair rate, and a team that actually followed through.",
     name: "Priya K.",
     detail: "Ute rental for business use",
+    rating: 5,
+    timeAgo: "3 weeks ago",
   },
 ];
 
@@ -174,29 +190,29 @@ export default function HomePage() {
       <section className="bg-white px-6 py-16 md:px-12">
         <div className="mx-auto max-w-6xl">
           <ScrollReveal animation="fade-up">
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">
-              Popular Picks
-            </p>
-            <h1 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
-              Featured Vehicles
-            </h1>
-            <p className="mt-3 text-lg text-slate-600">
-              Browse popular choices for city trips, family travel, business use,
-              and practical work needs.
-            </p>
-          </div>
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">
+                Popular Picks
+              </p>
+              <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
+                Featured Vehicles
+              </h2>
+              <p className="mt-3 text-lg text-slate-600">
+                Browse popular choices for city trips, family travel, business use,
+                and practical work needs.
+              </p>
+            </div>
           </ScrollReveal>
           <ScrollReveal animation="fade-up" delay={200}>
-          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {featuredVehicles.map((vehicle) => (
-              <VehicleCard
-                key={vehicle.id}
-                vehicle={vehicle}
-                phoneNumber={BUSINESS.phoneHref}
-              />
-            ))}
-          </div>
+            <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {featuredVehicles.map((vehicle) => (
+                <VehicleCard
+                  key={vehicle.id}
+                  vehicle={vehicle}
+                  phoneNumber={BUSINESS.phoneHref}
+                />
+              ))}
+            </div>
           </ScrollReveal>
           <div className="mt-10 text-center">
             <Button href="/cars" variant="primary">
@@ -207,197 +223,270 @@ export default function HomePage() {
       </section>
 
       <ScrollReveal animation="fade-up">
-      <section className="bg-slate-50 px-6 py-16 md:px-12">
-        <div className="mx-auto max-w-6xl">
-          <div className="text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">
-              Simple Process
-            </p>
-            <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
-              Renting Made Simple
-            </h2>
-            <p className="mt-3 text-lg text-slate-600">
-              Three clear steps from browsing to pickup.
+        <section className="bg-white px-6 py-16 md:px-12">
+          <div className="mx-auto max-w-6xl">
+            <div className="text-center">
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">
+                Simple Process
+              </p>
+              <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
+                Renting Made Simple
+              </h2>
+              <p className="mt-3 text-lg text-slate-600">
+                Three clear steps from browsing to pickup.
+              </p>
+            </div>
+            <div className="mt-12 grid gap-6 md:grid-cols-3">
+              {rentalSteps.map((step) => (
+                <article
+                  key={step.number}
+                  className="rounded-3xl border border-slate-200 bg-slate-50 p-8 text-center shadow-sm"
+                >
+                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-brand-100 text-lg font-bold text-brand-700">
+                    {step.number}
+                  </div>
+                  <h3 className="mt-5 text-xl font-semibold text-slate-900">{step.title}</h3>
+                  <p className="mt-3 text-base leading-7 text-slate-600">{step.description}</p>
+                </article>
+              ))}
+            </div>
+            <p className="mt-8 text-center text-sm text-slate-500">
+              No complicated checkout flow - just pick a vehicle, contact us, and
+              we confirm the details quickly.
             </p>
           </div>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {rentalSteps.map((step) => (
-              <article
-                key={step.number}
-                className="rounded-3xl border border-slate-200 bg-white p-8 text-center shadow-sm"
-              >
-                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-brand-100 text-lg font-bold text-brand-700">
-                  {step.number}
-                </div>
-                <h3 className="mt-5 text-xl font-semibold text-slate-900">{step.title}</h3>
-                <p className="mt-3 text-base leading-7 text-slate-600">{step.description}</p>
-              </article>
-            ))}
-          </div>
-          <p className="mt-8 text-center text-sm text-slate-500">
-            No complicated checkout flow - just pick a vehicle, contact us, and
-            we confirm the details quickly.
-          </p>
-        </div>
-      </section>
+        </section>
       </ScrollReveal>
 
       <section className="bg-white px-6 py-16 md:px-12">
         <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
           <ScrollReveal animation="fade-right">
-          <div className="relative aspect-[5/4] overflow-hidden rounded-3xl shadow-xl">
-            <Image
-              src="/images/why-landstar.jpg"
-              alt="Quality rental car on an open road"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
+            <div className="relative aspect-[5/4] overflow-hidden rounded-3xl shadow-xl">
+              <Image
+                src="/images/why-landstar.jpg"
+                alt="Reliable car rental Perth – Star Rental Club quality vehicle"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
           </ScrollReveal>
           <ScrollReveal animation="fade-left">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">
-              Why Rent With Us
-            </p>
-            <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
-              Why Star Rental Club?
-            </h2>
-            <p className="mt-4 text-lg leading-8 text-slate-600">
-              We&apos;ve been helping Australians get on the road with quality
-              rental vehicles at competitive prices. Whether you need a compact
-              sedan for city driving, a rugged ute for the job site, or a
-              spacious people mover for the family - we&apos;ve got you covered.
-            </p>
-            <div className="mt-8 space-y-4">
-              <CheckItem>Well-maintained, reliable fleet</CheckItem>
-              <CheckItem>Transparent pricing - no hidden fees</CheckItem>
-              <CheckItem>Flexible daily, weekly &amp; long-term hire</CheckItem>
-              <CheckItem>Friendly, local Australian service</CheckItem>
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">
+                Why Rent With Us
+              </p>
+              <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
+                Why Star Rental Club?
+              </h2>
+              <p className="mt-4 text-lg leading-8 text-slate-600">
+                At Star Rental Club, we focus on providing high-quality car rental
+                Perth services for daily travel, business use, and personal trips.
+                Our vehicles are clean, well-maintained, and ready for immediate
+                use. Based in East Cannington, we serve customers throughout Perth
+                CBD, Cannington, nearby eastern suburbs, and the greater Perth
+                region.
+              </p>
+              <div className="mt-8 space-y-4">
+                <CheckItem>Affordable car rental Perth pricing</CheckItem>
+                <CheckItem>No hidden charges – transparent pricing</CheckItem>
+                <CheckItem>Flexible daily, weekly &amp; long-term hire</CheckItem>
+                <CheckItem>Reliable, well-maintained vehicles</CheckItem>
+                <CheckItem>Friendly local service in East Cannington</CheckItem>
+              </div>
+              <div className="mt-8">
+                <Button href="/about" variant="secondary">
+                  Learn More About Us
+                </Button>
+              </div>
             </div>
-            <div className="mt-8">
-              <Button href="/about" variant="secondary">
-                Learn More About Us
-              </Button>
-            </div>
-          </div>
           </ScrollReveal>
         </div>
       </section>
 
       <ScrollReveal animation="fade-up">
-      <section className="bg-slate-50 px-6 py-16 md:px-12">
-        <div className="mx-auto max-w-6xl">
-          <div className="text-center">
-            <p className="inline-flex rounded-full bg-brand-50 px-4 py-2 text-sm font-semibold text-brand-700">
-              {BUSINESS.rating} average recent rating
-            </p>
-            <h2 className="mt-4 text-3xl font-bold text-slate-900 md:text-4xl">
-              What Our Customers Say
-            </h2>
-            <p className="mt-3 text-lg text-slate-600">
-              Real feedback from renters using different vehicles for different trips.
-            </p>
-          </div>
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {testimonials.map((testimonial) => (
-              <article
-                key={testimonial.name}
-                className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm"
-              >
-                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">
-                  5 / 5 rating
-                </p>
-                <p className="mt-4 text-base leading-7 text-slate-600">
-                  &ldquo;{testimonial.quote}&rdquo;
-                </p>
-                <div className="mt-6 border-t border-slate-200 pt-4">
-                  <p className="font-semibold text-slate-900">{testimonial.name}</p>
-                  <p className="mt-1 text-sm text-slate-500">{testimonial.detail}</p>
+        <section className="bg-slate-50 px-6 py-16 md:px-12">
+          <div className="mx-auto max-w-6xl">
+            <div className="text-center">
+              <div className="mx-auto flex items-center justify-center gap-3">
+                <svg className="h-8 w-8" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/>
+                  <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                  <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                  <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                </svg>
+                <span className="text-sm font-semibold text-slate-500">Google Reviews</span>
+              </div>
+              <div className="mt-4 flex items-center justify-center gap-2">
+                <span className="text-4xl font-bold text-slate-900">5.0</span>
+                <div className="flex gap-0.5">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="h-6 w-6 text-amber-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
                 </div>
-              </article>
-            ))}
+              </div>
+              <h2 className="mt-4 text-3xl font-bold text-slate-900 md:text-4xl">
+                What Our Customers Say
+              </h2>
+              <p className="mt-3 text-lg text-slate-600">
+                Real feedback from renters using different vehicles for different trips.
+              </p>
+            </div>
+            <div className="mt-10 grid gap-6 md:grid-cols-3">
+              {testimonials.map((testimonial) => (
+                <article
+                  key={testimonial.name}
+                  className="flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-600 text-sm font-bold text-white">
+                      {testimonial.name.charAt(0)}
+                    </div>
+                    <div>
+                      <p className="font-semibold text-slate-900">{testimonial.name}</p>
+                      <p className="text-xs text-slate-400">{testimonial.timeAgo}</p>
+                    </div>
+                  </div>
+                  <div className="mt-3 flex gap-0.5">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <svg key={i} className="h-4 w-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
+                  <p className="mt-3 flex-1 text-base leading-7 text-slate-600">
+                    &ldquo;{testimonial.quote}&rdquo;
+                  </p>
+                  <div className="mt-4 flex items-center justify-between border-t border-slate-100 pt-4">
+                    <p className="text-xs text-slate-400">{testimonial.detail}</p>
+                    <svg className="h-4 w-4 opacity-40" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/>
+                      <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                      <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                      <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                    </svg>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
       </ScrollReveal>
 
       <ScrollReveal animation="fade-up">
-      <section className="bg-white px-6 py-16 md:px-12">
-        <div className="mx-auto max-w-6xl">
-          <div className="text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">
-              Helpful Answers
+        <section className="bg-white px-6 py-16 md:px-12">
+          <div className="mx-auto max-w-6xl">
+            <div className="text-center">
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">
+                Helpful Answers
+              </p>
+              <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
+                Frequently Asked Questions
+              </h2>
+              <p className="mt-3 text-lg text-slate-600">
+                The essentials customers usually ask before booking.
+              </p>
+            </div>
+            <div className="mt-10 grid gap-6 md:grid-cols-2">
+              {faqs.map((faq) => (
+                <article
+                  key={faq.question}
+                  className="rounded-3xl border border-slate-200 bg-slate-50 p-6"
+                >
+                  <h3 className="text-xl font-semibold text-slate-900">{faq.question}</h3>
+                  <p className="mt-3 text-base leading-7 text-slate-600">{faq.answer}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      </ScrollReveal>
+
+      <ScrollReveal animation="fade-up">
+        <section className="bg-slate-50 px-6 py-16 md:px-12">
+          <div className="mx-auto max-w-6xl">
+            <div className="text-center">
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">
+                Service Areas
+              </p>
+              <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
+                Serving Perth and Surrounding Areas
+              </h2>
+              <p className="mt-3 text-lg text-slate-600">
+                Our car rental Perth services are based in East Cannington, Western
+                Australia, allowing us to serve customers across the region.
+              </p>
+            </div>
+            <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-5">
+              {["Perth CBD", "East Cannington", "Cannington", "Eastern Suburbs", "Greater Perth"].map(
+                (area) => (
+                  <div
+                    key={area}
+                    className="rounded-2xl border border-slate-200 bg-white px-4 py-5 text-center shadow-sm"
+                  >
+                    <p className="text-base font-semibold text-slate-900">{area}</p>
+                  </div>
+                )
+              )}
+            </div>
+            <p className="mt-6 text-center text-sm text-slate-500">
+              We are committed to providing convenient and dependable car hire
+              solutions throughout Perth.
             </p>
-            <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
-              Frequently Asked Questions
+          </div>
+        </section>
+      </ScrollReveal>
+
+      <ScrollReveal animation="fade-up">
+        <section className="bg-brand-700 px-6 py-16 text-white md:px-12">
+          <div className="mx-auto max-w-5xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-100">
+              Ready When You Are
+            </p>
+            <h2 className="mt-3 text-3xl font-bold md:text-4xl">
+              Book Your Car Rental in Perth
             </h2>
-            <p className="mt-3 text-lg text-slate-600">
-              The essentials customers usually ask before booking.
+            <p className="mt-4 text-lg text-brand-100">
+              If you are looking for car rental Perth, Star Rental Club is ready
+              to help. Contact us today to book your vehicle and enjoy a smooth
+              and stress-free rental experience.
             </p>
-          </div>
-          <div className="mt-10 grid gap-6 md:grid-cols-2">
-            {faqs.map((faq) => (
-              <article
-                key={faq.question}
-                className="rounded-3xl border border-slate-200 bg-slate-50 p-6"
+            <div className="mt-10 grid gap-4 text-left md:grid-cols-3">
+              <InfoCard
+                icon={<HiOutlineClock className="h-5 w-5" />}
+                label="Hours"
+                value={BUSINESS.businessHours}
+              />
+              <InfoCard
+                icon={<HiOutlineMapPin className="h-5 w-5" />}
+                label="Address"
+                value={BUSINESS.location}
+                href={BUSINESS.mapsUrl}
+              />
+              <InfoCard
+                icon={<HiOutlineGlobeAlt className="h-5 w-5" />}
+                label="Coverage"
+                value={BUSINESS.serviceArea}
+              />
+            </div>
+            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <a
+                href={`tel:${BUSINESS.phoneHref}`}
+                className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg bg-white px-6 py-3 text-base font-semibold text-brand-700 transition-colors duration-200 hover:bg-brand-50"
               >
-                <h3 className="text-xl font-semibold text-slate-900">{faq.question}</h3>
-                <p className="mt-3 text-base leading-7 text-slate-600">{faq.answer}</p>
-              </article>
-            ))}
+                Call {BUSINESS.phone}
+              </a>
+              <a
+                href="/contact"
+                className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg border border-white/40 px-6 py-3 text-base font-semibold text-white transition-colors duration-200 hover:bg-white/10"
+              >
+                Send Us a Message
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
-      </ScrollReveal>
-
-      <ScrollReveal animation="fade-up">
-      <section className="bg-brand-700 px-6 py-16 text-white md:px-12">
-        <div className="mx-auto max-w-5xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-100">
-            Ready When You Are
-          </p>
-          <h2 className="mt-3 text-3xl font-bold md:text-4xl">
-            Ready to Hit the Road?
-          </h2>
-          <p className="mt-4 text-lg text-brand-100">
-            Get in touch with our team today and we&apos;ll help you find the
-            right vehicle for your plans.
-          </p>
-          <div className="mt-10 grid gap-4 text-left md:grid-cols-3">
-            <InfoCard
-              icon={<HiOutlineClock className="h-5 w-5" />}
-              label="Hours"
-              value={BUSINESS.businessHours}
-            />
-            <InfoCard
-              icon={<HiOutlineMapPin className="h-5 w-5" />}
-              label="Address"
-              value={BUSINESS.location}
-              href={BUSINESS.mapsUrl}
-            />
-            <InfoCard
-              icon={<HiOutlineGlobeAlt className="h-5 w-5" />}
-              label="Coverage"
-              value={BUSINESS.serviceArea}
-            />
-          </div>
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <a
-              href={`tel:${BUSINESS.phoneHref}`}
-              className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg bg-white px-6 py-3 text-base font-semibold text-brand-700 transition-colors duration-200 hover:bg-brand-50"
-            >
-              Call {BUSINESS.phone}
-            </a>
-            <a
-              href="/contact"
-              className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg border border-white/40 px-6 py-3 text-base font-semibold text-white transition-colors duration-200 hover:bg-white/10"
-            >
-              Send Us a Message
-            </a>
-          </div>
-        </div>
-      </section>
+        </section>
       </ScrollReveal>
     </>
   );

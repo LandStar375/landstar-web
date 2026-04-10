@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Button from "@/components/Button";
 import { BUSINESS } from "@/data/constants";
@@ -22,9 +23,16 @@ export default function Navigation() {
       aria-label="Main navigation"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex min-h-[56px] items-center justify-between gap-6 py-2 md:min-h-[72px] md:py-3">
-          <Link href="/" className="text-xl font-bold tracking-tight text-slate-950 md:text-2xl">
-            <span className="text-brand-700">Land</span> Star
+        <div className="flex h-[80px] items-center justify-between gap-6">
+          <Link href="/" className="flex items-center gap-2 mx-auto md:mx-0">
+            <Image
+              src="/images/Logo/starRental logo.png"
+              alt="Star Rental Club – Car Rental Perth"
+              width={200}
+              height={50}
+              className="h-24 w-auto"
+              priority
+            />
           </Link>
 
           <div className="hidden items-center gap-4 md:flex">

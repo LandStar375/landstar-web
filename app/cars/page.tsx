@@ -5,22 +5,31 @@ import { vehicles } from "@/data/vehicles";
 import { BUSINESS } from "@/data/constants";
 
 export const metadata: Metadata = {
-  title: "Our Fleet",
+  title: "Rental Cars in Perth | Star Rental Club Fleet",
   description:
-    "Browse the full range of Star Rental Club vehicles — sedans, SUVs, utes, and people movers available for hire in Perth, WA.",
+    "Browse rental cars in Perth and East Cannington. Choose from sedans, SUVs, utes, and family vehicles with flexible pricing at Star Rental Club.",
   keywords: [
     "rental cars Perth",
-    "hire car fleet Cannington",
+    "car hire fleet East Cannington",
     "SUV rental Perth",
-    "ute hire Western Australia",
-    "sedan rental Cannington WA",
+    "ute hire Perth",
+    "sedan rental Perth",
     "people mover hire Perth",
     "Star Rental Club fleet",
+    "affordable car hire Perth",
   ],
   openGraph: {
-    title: "Our Fleet – Rental Cars Perth | Star Rental Club",
+    title: "Rental Cars in Perth | Star Rental Club Fleet",
     description:
-      "Browse the full range of Star Rental Club vehicles — sedans, SUVs, utes, and people movers available for hire in Perth, WA.",
+      "Browse rental cars in Perth and East Cannington. Choose from sedans, SUVs, utes, and family vehicles with flexible pricing at Star Rental Club.",
+    images: [
+      {
+        url: "/images/hero-bg.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Star Rental Club Fleet – Rental Cars Perth",
+      },
+    ],
   },
   alternates: {
     canonical: "https://starrental.com.au/cars",
@@ -33,10 +42,17 @@ export default function CarsPage() {
       <div className="max-w-6xl mx-auto">
         <ScrollReveal animation="fade-up">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">
-          Our Fleet
+          Rental Cars in Perth
         </h1>
-        <p className="mt-2 text-lg text-gray-600 text-center">
-          Find the perfect vehicle for your next trip
+        <p className="mt-3 max-w-3xl mx-auto text-lg text-gray-600 text-center">
+          Looking for reliable car rental in Perth? Browse our fleet of sedans,
+          SUVs, utes, and family cars available for hire in East Cannington and
+          surrounding Perth areas. Short-term or long-term — choose the right
+          car for your needs.
+        </p>
+        <p className="mt-2 max-w-3xl mx-auto text-base text-gray-500 text-center">
+          Our vehicles are well-maintained and ready for daily commuting, family
+          trips, or work use with flexible and affordable pricing.
         </p>
         </ScrollReveal>
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -49,6 +65,34 @@ export default function CarsPage() {
             </ScrollReveal>
           ))}
         </div>
+
+        <ScrollReveal animation="fade-up">
+          <div className="mt-16 max-w-3xl mx-auto text-center">
+            <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
+              Car Hire Options in Perth
+            </h2>
+            <p className="mt-4 text-lg text-gray-600 leading-8">
+              From compact sedans for daily driving to SUVs and utes for family
+              trips or work use, Star Rental Club provides flexible car hire
+              options in East Cannington and nearby areas. Contact us to check
+              availability or book your vehicle today.
+            </p>
+            <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <a
+                href="/contact"
+                className="inline-flex min-h-[44px] items-center justify-center rounded-lg bg-brand-700 px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-brand-800"
+              >
+                Contact Us
+              </a>
+              <a
+                href="/about"
+                className="inline-flex min-h-[44px] items-center justify-center rounded-lg border border-gray-300 px-6 py-3 text-base font-semibold text-gray-700 transition-colors hover:bg-gray-50"
+              >
+                Learn More About Us
+              </a>
+            </div>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );
