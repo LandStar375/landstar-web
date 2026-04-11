@@ -30,7 +30,7 @@ export default function Navigation() {
               alt="Star Rental Club – Car Rental Perth"
               width={200}
               height={50}
-              className="h-24 w-auto"
+              className="h-20 w-auto"
               priority
             />
           </Link>
