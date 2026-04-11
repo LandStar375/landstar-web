@@ -11,6 +11,7 @@ export default function VehicleCard({
 }: VehicleCardProps) {
   const [selecting, setSelecting] = useState(false);
   const [selectedTier, setSelectedTier] = useState<number | null>(null);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   const telHref = `tel:${phoneNumber}`;
   const vehicleAccent = "#596626";
@@ -54,12 +55,17 @@ export default function VehicleCard({
   return (
     <article className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg">
       <div className="relative aspect-[16/10] w-full overflow-hidden border-b border-slate-100 bg-gradient-to-br from-slate-50 via-white to-slate-100">
+        {!imageLoaded && (
+          <div className="absolute inset-0 animate-pulse bg-gradient-to-r from-slate-100 via-slate-200 to-slate-100" />
+        )}
         <Image
           src={vehicle.image}
-          alt={vehicle.name}
+          alt={`${vehicle.name} – car hire Perth`}
           fill
-          className="object-contain object-center p-4 sm:p-5"
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          loading="lazy"
+          onLoad={() => setImageLoaded(true)}
+          className={`object-contain object-center p-4 sm:p-5 transition-opacity duration-300 ${imageLoaded ? "opacity-100" : "opacity-0"}`}
+          sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 30vw"
         />
       </div>
       <div className="flex flex-1 flex-col gap-4 p-5">
