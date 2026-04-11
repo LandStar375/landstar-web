@@ -34,6 +34,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://starrental.com.au/cars",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rental Cars in Perth | Star Rental Club Fleet",
+    description:
+      "Browse rental cars in Perth and East Cannington. Choose from sedans, SUVs, utes, and family vehicles with flexible pricing at Star Rental Club.",
+  },
 };
 
 export default function CarsPage() {

@@ -40,6 +40,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://starrental.com.au/about",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Star Rental Club | Car Rental in Cannington & Perth",
+    description:
+      "Learn about Star Rental Club, a Cannington-based car rental service providing reliable vehicles, transparent pricing, and flexible car hire across Perth.",
+  },
 };
 
 const offeringCards = [

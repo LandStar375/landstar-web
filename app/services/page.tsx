@@ -53,6 +53,12 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Car Rental Services Perth | Daily, Weekly & Long Term Hire | Star Rental Club",
+    description:
+      "Explore car rental services in Perth with Star Rental Club. Daily, weekly, and long-term car hire available in East Cannington and surrounding suburbs.",
+  },
 };
 
 const services = [

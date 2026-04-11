@@ -38,6 +38,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://starrental.com.au",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Car Rental Perth | Affordable Car Hire Perth | Star Rental Club",
+    description:
+      "Looking for car rental Perth? Star Rental Club offers affordable and reliable car hire in East Cannington, Perth CBD, and surrounding suburbs.",
+  },
 };
 
 const featuredVehicles = vehicles.filter((vehicle) => vehicle.featured).slice(0, 6);

@@ -30,6 +30,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://starrental.com.au/contact",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Star Rental Club | Car Rental Perth & Cannington",
+    description:
+      "Contact Star Rental Club for affordable car rental in Perth and East Cannington. Call, email, or send an enquiry to book your vehicle today.",
+  },
 };
 
 interface ContactPageProps {

@@ -9,6 +9,14 @@ export const metadata: Metadata = {
     title: "Terms and Conditions | Star Rental Club",
     description:
       "Review the rental terms and conditions for Star Rental Club, including renter responsibilities, coverage options, return rules, and business hours.",
+    images: [
+      {
+        url: "/images/hero-bg.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Star Rental Club – Terms and Conditions",
+      },
+    ],
   },
   alternates: {
     canonical: "https://starrental.com.au/terms-and-conditions",

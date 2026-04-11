@@ -41,6 +41,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Star Rental Club" }],
   openGraph: {
     type: "website",
+    url: "https://starrental.com.au",
     siteName: "Star Rental Club",
     locale: "en_AU",
     images: [
