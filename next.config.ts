@@ -16,7 +16,14 @@ const nextConfig: NextConfig = {
       },
     ];
   },
-  images: {},
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+    ],
+  },
   turbopack: {},
 };
 

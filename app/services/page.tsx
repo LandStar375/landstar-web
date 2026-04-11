@@ -230,32 +230,74 @@ export default function ServicesPage() {
       <section className="bg-gradient-to-br from-brand-900 via-brand-800 to-brand-600 px-4 py-12 text-white sm:px-6 sm:py-16 md:px-12">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl">
-            Car Rental Services in Perth for Every Travel Need
+            Services
           </h1>
-          <p className="mx-auto mt-3 max-w-3xl text-base text-brand-100 sm:mt-4 sm:text-lg">
-            Explore flexible and affordable car rental services in Perth with{" "}
-            {BUSINESS.name}. Daily, weekly, and long-term vehicle hire for
-            individuals, families, and businesses across East Cannington and
-            surrounding Perth areas.
-          </p>
         </div>
       </section>
 
       <section className="bg-white px-6 py-16 md:px-12">
-        <div className="mx-auto max-w-5xl">
-          <ScrollReveal animation="fade-up">
-            <div className="text-center">
-              <p className="text-sm font-semibold uppercase tracking-widest text-brand-700">
-                Service Overview
+        <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
+          <ScrollReveal animation="fade-right">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-xl">
+              <Image
+                src="/images/our_service_4.png"
+                alt="Couple loading luggage into SUV – car rental services for every travel need in Perth"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+          </ScrollReveal>
+          <ScrollReveal animation="fade-left">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">
+                Why Choose Us
               </p>
               <h2 className="mt-2 text-2xl font-bold text-gray-900 md:text-3xl">
-                Flexible Car Rental Services Without Complication
+                Car Rental Services in Perth for Every Travel Need
               </h2>
-              <p className="mx-auto mt-4 max-w-3xl text-lg text-gray-600">
+              <p className="mt-4 text-lg leading-8 text-gray-600">
+                Explore flexible and affordable car rental services in Perth with{" "}
+                {BUSINESS.name}. Daily, weekly, and long-term vehicle hire for
+                individuals, families, and businesses across East Cannington and
+                surrounding Perth areas.
+              </p>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      <section className="bg-slate-50 px-6 py-16 md:px-12">
+        <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
+          <ScrollReveal animation="fade-right" className="order-2 md:order-1">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">
+                Simple & Clear
+              </p>
+              <h2 className="mt-2 text-2xl font-bold text-gray-900 md:text-3xl">
+                Flexible Car Rental Without Complication
+              </h2>
+              <p className="mt-4 text-lg leading-8 text-gray-600">
                 Finding the right car rental in Perth should be simple. At Star
                 Rental Club, we offer clear pricing, easy booking, and reliable
                 vehicles so you can focus on your journey instead of the process.
               </p>
+              <div className="mt-6">
+                <Button href="/contact" variant="primary">
+                  Get in Touch
+                </Button>
+              </div>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal animation="fade-left" className="order-1 md:order-2">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-xl">
+              <Image
+                src="/images/our_service_2.png"
+                alt="Simple car hire booking – flexible rental services Perth"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
           </ScrollReveal>
         </div>

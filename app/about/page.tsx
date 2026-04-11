@@ -160,22 +160,15 @@ export default function AboutPage() {
       <section className="bg-gradient-to-br from-brand-900 via-brand-800 to-brand-600 px-4 py-12 text-white sm:px-6 sm:py-16 md:px-12">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl">
-            About Star Rental Club – Car Rental in Perth
+            About Us
           </h1>
-          <p className="mx-auto mt-3 max-w-3xl text-base text-brand-100 sm:mt-4 sm:text-lg">
-            Star Rental Club is a trusted car rental service based in East
-            Cannington, Perth, providing reliable and affordable vehicle hire
-            for local drivers, families, and businesses. Our goal is to make
-            car rental simple, clear, and accessible for customers across Perth
-            and surrounding areas.
-          </p>
         </div>
       </section>
 
       <section className="bg-white px-6 py-16 md:px-12">
-        <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 md:grid-cols-2">
+        <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
           <ScrollReveal animation="fade-right">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-xl">
               <Image
                 src="/images/about-office.jpg"
                 alt="Star Rental Club office and customer service setting"
@@ -185,27 +178,46 @@ export default function AboutPage() {
               />
             </div>
           </ScrollReveal>
-
           <ScrollReveal animation="fade-left">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-widest text-brand-700">
-                Our Story
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">
+                Who We Are
               </p>
               <h2 className="mt-2 text-2xl font-bold text-gray-900 md:text-3xl">
-                Our Story
+                About Star Rental Club – Car Rental in Perth
               </h2>
-              <p className="mt-4 leading-8 text-gray-600">
-                Star Rental Club was built around a simple idea: car rental should
-                be easy to understand and easy to arrange. Many customers struggle
-                with confusing pricing and unclear booking processes, so we focus
-                on transparency, communication, and practical vehicle options.
-              </p>
-              <p className="mt-4 leading-8 text-gray-600">
-                Based in East Cannington, we help customers choose the right
-                vehicles for daily travel, family trips, business use, and
-                temporary transport needs across Perth.
+              <p className="mt-4 text-lg leading-8 text-gray-600">
+                Star Rental Club is a trusted car rental service based in East
+                Cannington, Perth, providing reliable and affordable vehicle hire
+                for local drivers, families, and businesses. Our goal is to make
+                car rental simple, clear, and accessible for customers across
+                Perth and surrounding areas.
               </p>
             </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      <section className="bg-slate-50 px-6 py-16 md:px-12">
+        <div className="mx-auto max-w-4xl text-center">
+          <ScrollReveal animation="fade-up">
+            <p className="text-sm font-semibold uppercase tracking-widest text-brand-700">
+              Our Story
+            </p>
+            <h2 className="mt-2 text-2xl font-bold text-gray-900 md:text-3xl">
+              A Simple Idea Behind Star Rental Club
+            </h2>
+            <p className="mt-4 text-lg leading-8 text-gray-600">
+              Star Rental Club was built around a simple idea: car rental should
+              be easy to understand and easy to arrange. Many customers struggle
+              with confusing pricing and unclear booking processes, so we focus
+              on transparency, communication, and practical vehicle options.
+            </p>
+            <p className="mt-4 text-lg leading-8 text-gray-600">
+              Based in East Cannington, we help customers choose the right
+              vehicles for daily travel, family trips, business use, and
+              temporary transport needs across Perth.
+            </p>
           </ScrollReveal>
         </div>
       </section>

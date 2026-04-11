@@ -38,24 +38,18 @@ export const metadata: Metadata = {
 
 export default function CarsPage() {
   return (
-    <section className="py-16 px-6 md:px-12">
-      <div className="max-w-6xl mx-auto">
-        <ScrollReveal animation="fade-up">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">
-          Rental Cars in Perth
-        </h1>
-        <p className="mt-3 max-w-3xl mx-auto text-lg text-gray-600 text-center">
-          Looking for reliable car rental in Perth? Browse our fleet of sedans,
-          SUVs, utes, and family cars available for hire in East Cannington and
-          surrounding Perth areas. Short-term or long-term — choose the right
-          car for your needs.
-        </p>
-        <p className="mt-2 max-w-3xl mx-auto text-base text-gray-500 text-center">
-          Our vehicles are well-maintained and ready for daily commuting, family
-          trips, or work use with flexible and affordable pricing.
-        </p>
-        </ScrollReveal>
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <>
+      <section className="bg-gradient-to-br from-brand-900 via-brand-800 to-brand-600 px-4 py-12 text-white sm:px-6 sm:py-16 md:px-12">
+        <div className="mx-auto max-w-4xl text-center">
+          <h1 className="text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl">
+             Cars 
+          </h1>
+        </div>
+      </section>
+
+      <section className="py-16 px-6 md:px-12">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {vehicles.map((vehicle, index) => (
             <ScrollReveal key={vehicle.id} animation="fade-up" delay={index * 100}>
             <VehicleCard
@@ -66,34 +60,9 @@ export default function CarsPage() {
           ))}
         </div>
 
-        <ScrollReveal animation="fade-up">
-          <div className="mt-16 max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
-              Car Hire Options in Perth
-            </h2>
-            <p className="mt-4 text-lg text-gray-600 leading-8">
-              From compact sedans for daily driving to SUVs and utes for family
-              trips or work use, Star Rental Club provides flexible car hire
-              options in East Cannington and nearby areas. Contact us to check
-              availability or book your vehicle today.
-            </p>
-            <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <a
-                href="/contact"
-                className="inline-flex min-h-[44px] items-center justify-center rounded-lg bg-brand-700 px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-brand-800"
-              >
-                Contact Us
-              </a>
-              <a
-                href="/about"
-                className="inline-flex min-h-[44px] items-center justify-center rounded-lg border border-gray-300 px-6 py-3 text-base font-semibold text-gray-700 transition-colors hover:bg-gray-50"
-              >
-                Learn More About Us
-              </a>
-            </div>
-          </div>
-        </ScrollReveal>
-      </div>
-    </section>
+        
+        </div>
+      </section>
+    </>
   );
 }
