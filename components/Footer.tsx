@@ -17,7 +17,7 @@ const PAGE_LINKS = [
   { href: "/contact", label: "Contact" },
 ];
 
-const FOOTER_BRAND_NAME = "Star Rental Club";
+const FOOTER_BRAND_NAME = "Star Rental";
 
 export default function Footer() {
   return (
@@ -28,29 +28,28 @@ export default function Footer() {
             <Link href="/">
               <Image
                 src="/images/Logo/starRental logo.png"
-                alt="Star Rental Club – Car Rental Perth"
+                alt="Star Rental – Car Rental Perth"
                 width={220}
                 height={65}
                 className="w-[180px] brightness-0 invert"
               />
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-7 text-slate-400">
-              Affordable and reliable car rental in Perth. Based in East
-              Cannington, we offer sedans, SUVs, utes, and family vehicles
-              for daily, weekly, and long-term hire across {BUSINESS.serviceArea}.
+              Affordable and reliable car rental in Perth. We offer sedans, SUVs, utes, and family vehicles
+              for daily, weekly, and long-term hire all over Perth.
             </p>
             <div className="mt-5 flex items-center gap-4">
               <a
                 href={`tel:${BUSINESS.phoneHref}`}
                 className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-slate-800 text-brand-300 transition-colors hover:bg-slate-700 hover:text-white"
-                aria-label="Call Star Rental Club"
+                aria-label="Call Star Rental"
               >
                 <HiOutlinePhone className="h-5 w-5" />
               </a>
               <a
                 href={`mailto:${BUSINESS.email}`}
                 className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-slate-800 text-brand-300 transition-colors hover:bg-slate-700 hover:text-white"
-                aria-label="Email Star Rental Club"
+                aria-label="Email Star Rental"
               >
                 <HiOutlineEnvelope className="h-5 w-5" />
               </a>
@@ -59,7 +58,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-slate-800 text-brand-300 transition-colors hover:bg-slate-700 hover:text-white"
-                aria-label="Find Star Rental Club on Google Maps"
+                aria-label="Find Star Rental on Google Maps"
               >
                 <HiOutlineMapPin className="h-5 w-5" />
               </a>

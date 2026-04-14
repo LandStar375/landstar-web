@@ -5,29 +5,32 @@ import { vehicles } from "@/data/vehicles";
 import { BUSINESS } from "@/data/constants";
 
 export const metadata: Metadata = {
-  title: "Rental Cars in Perth | Star Rental Club Fleet",
+  title: "Rental Cars in Perth | Star Rental Fleet",
   description:
-    "Browse rental cars in Perth and East Cannington. Choose from sedans, SUVs, utes, and family vehicles with flexible pricing at Star Rental Club.",
+    "Browse rental cars in Perth. Choose from sedans, SUVs, utes, and family vehicles with flexible pricing at Star Rental.",
   keywords: [
     "rental cars Perth",
-    "car hire fleet East Cannington",
+    "car hire Perth",
     "SUV rental Perth",
     "ute hire Perth",
     "sedan rental Perth",
     "people mover hire Perth",
-    "Star Rental Club fleet",
+    "Star Rental fleet",
     "affordable car hire Perth",
+    "cheap car rental Perth",
+    "rent a car Perth",
+    "best rental cars Perth",
   ],
   openGraph: {
-    title: "Rental Cars in Perth | Star Rental Club Fleet",
+    title: "Rental Cars in Perth | Star Rental Fleet",
     description:
-      "Browse rental cars in Perth and East Cannington. Choose from sedans, SUVs, utes, and family vehicles with flexible pricing at Star Rental Club.",
+      "Browse rental cars in Perth. Choose from sedans, SUVs, utes, and family vehicles with flexible pricing at Star Rental.",
     images: [
       {
         url: "/images/hero-bg.jpg",
         width: 1200,
         height: 630,
-        alt: "Star Rental Club Fleet – Rental Cars Perth",
+        alt: "Star Rental Fleet – Rental Cars Perth",
       },
     ],
   },
@@ -36,9 +39,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rental Cars in Perth | Star Rental Club Fleet",
+    title: "Rental Cars in Perth | Star Rental Fleet",
     description:
-      "Browse rental cars in Perth and East Cannington. Choose from sedans, SUVs, utes, and family vehicles with flexible pricing at Star Rental Club.",
+      "Browse rental cars in Perth. Choose from sedans, SUVs, utes, and family vehicles with flexible pricing at Star Rental.",
   },
 };
 

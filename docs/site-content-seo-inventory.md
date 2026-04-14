@@ -13,7 +13,7 @@ Generated from the current Next.js source code.
 - WhatsApp: 61469716030
 - Info email: info@starrental.com.au
 - Booking email: booking@starrental.com.au
-- Address: 92 Mallard Way, East Cannington WA 6107
+- Address: 92 mallard way Cannington
 - Business hours: Mon-Sat, 8:00 AM - 5:00 PM
 - Service area: Perth, Western Australia
 
@@ -324,7 +324,7 @@ Generated from the current Next.js source code.
   - Prefill behavior: if `vehicle` and `price` query params exist, the page shows the selected vehicle and pre-fills the message with interest and pricing text
 - Sidebar cards:
   - `Business Hours`: Monday-Saturday `8:00 AM - 5:00 PM`; Sunday `Closed`
-  - `Quick Contact`: phone `0469716030`, email `info@starrental.com.au`, address `92 Mallard Way, East Cannington WA 6107`
+  - `Quick Contact`: phone `0469716030`, email `info@starrental.com.au`, address `92 mallard way Cannington`
   - Promo CTA heading: `Need a car rental in Perth today?`
   - Promo CTA text: same-day availability and enquiry encouragement
   - Promo CTA button: `Call Now`
@@ -348,7 +348,7 @@ Generated from the current Next.js source code.
   - H1: `Terms and Conditions`
   - Intro: the terms are supplementary to consumer protection law and define `the vehicle` as the rental vehicle under the agreement
 - Section 1: `Responsibilities of the Renter`
-  - Return the vehicle to 92 Mallard Way, East Cannington WA 6107 at the agreed time
+  - Return the vehicle to 92 mallard way Cannington at the agreed time
   - No alcohol or drug-impaired driving
   - All drivers must hold valid driver licences
   - The renter is responsible for breaches by additional drivers
@@ -396,4 +396,4 @@ Generated from the current Next.js source code.
   - Phone: `0469716030`
   - Info Email: `info@starrental.com.au`
   - Bookings Email: `booking@starrental.com.au`
-  - Address: `92 Mallard Way, East Cannington WA 6107`
+  - Address: `92 mallard way Cannington`

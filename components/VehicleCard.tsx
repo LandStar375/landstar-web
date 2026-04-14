@@ -31,7 +31,7 @@ export default function VehicleCard({
     return `mailto:${BUSINESS.bookingEmail}?subject=${encodeURIComponent(
       `Vehicle Booking Request – ${vehicle.name}`
     )}&body=${encodeURIComponent(
-      `Dear Star Rental Club Team,\n\nI am interested in hiring the ${vehicle.name} (${vehicle.type}, ${vehicle.seats}-seater, ${vehicle.transmission}, ${vehicle.fuelType}) for the ${tier.label} rate at $${tier.price}/day.\n\nCould you please confirm availability and provide details on the booking process, required documents, and any applicable terms?\n\nPreferred pick-up date: \nPreferred return date: \nPick-up location: \n\nI look forward to hearing from you.\n\nKind regards,\n[Your Name]\n[Your Contact Number]`
+      `Dear Star Rental Team,\n\nI am interested in hiring the ${vehicle.name} (${vehicle.type}, ${vehicle.seats}-seater, ${vehicle.transmission}, ${vehicle.fuelType}) for the ${tier.label} rate at $${tier.price}/day.\n\nCould you please confirm availability and provide details on the booking process, required documents, and any applicable terms?\n\nPreferred pick-up date: \nPreferred return date: \nPick-up location: \n\nI look forward to hearing from you.\n\nKind regards,\n[Your Name]\n[Your Contact Number]`
     )}`;
   }
 

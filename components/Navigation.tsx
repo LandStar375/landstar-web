@@ -27,7 +27,7 @@ export default function Navigation() {
           <Link href="/" className="flex items-center gap-2 mx-auto md:mx-0">
             <Image
               src="/images/Logo/starRental logo.png"
-              alt="Star Rental Club – Car Rental Perth"
+              alt="Star Rental – Car Rental Perth"
               width={200}
               height={50}
               className="h-20 w-auto"

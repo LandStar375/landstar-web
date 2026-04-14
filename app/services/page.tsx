@@ -21,28 +21,31 @@ import {
 export const metadata: Metadata = {
   title: "Car Rental Services Perth | Daily, Weekly & Long Term Hire",
   description:
-    "Explore car rental services in Perth with Star Rental Club. Daily, weekly, and long-term car hire available in East Cannington and surrounding suburbs.",
+    "Explore car rental services in Perth with Star Rental. Daily, weekly, and long-term car hire available all over Perth.",
   keywords: [
     "car rental services Perth",
     "vehicle hire Perth",
-    "car hire East Cannington",
+    "car hire Perth",
     "long term car rental Perth",
     "daily car rental Perth",
     "weekly car hire Perth",
     "business car rental Perth",
     "replacement vehicle rental Perth",
     "airport car rental Perth",
+    "cheap car rental Perth",
+    "rent a car Perth",
+    "best car hire Perth",
   ],
   openGraph: {
-    title: "Car Rental Services Perth | Daily, Weekly & Long Term Hire | Star Rental Club",
+    title: "Car Rental Services Perth | Daily, Weekly & Long Term Hire | Star Rental",
     description:
-      "Explore car rental services in Perth with Star Rental Club. Daily, weekly, and long-term car hire available in East Cannington and surrounding suburbs.",
+      "Explore car rental services in Perth with Star Rental. Daily, weekly, and long-term car hire available all over Perth.",
     images: [
       {
         url: "/images/hero-bg.jpg",
         width: 1200,
         height: 630,
-        alt: "Star Rental Club – Car Rental Services Perth",
+        alt: "Star Rental – Car Rental Services Perth",
       },
     ],
   },
@@ -55,9 +58,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Car Rental Services Perth | Daily, Weekly & Long Term Hire | Star Rental Club",
+    title: "Car Rental Services Perth | Daily, Weekly & Long Term Hire | Star Rental",
     description:
-      "Explore car rental services in Perth with Star Rental Club. Daily, weekly, and long-term car hire available in East Cannington and surrounding suburbs.",
+      "Explore car rental services in Perth with Star Rental. Daily, weekly, and long-term car hire available all over Perth.",
   },
 };
 
@@ -181,9 +184,9 @@ const steps = [
 
 const servicesFaqs = [
   {
-    question: "Do you offer car rental in East Cannington?",
+    question: "Do you offer car rental in Perth?",
     answer:
-      "Yes, Star Rental Club is based in East Cannington and serves all nearby Perth areas including Perth CBD, Cannington, Victoria Park, Bentley, and surrounding suburbs.",
+      "Yes, Star Rental is based in Perth and serves all areas across Perth.",
   },
   {
     question: "Can I rent a car for long-term use?",
@@ -203,7 +206,7 @@ const servicesFaqs = [
   {
     question: "Do you offer daily and weekly car rental?",
     answer:
-      "Yes. Star Rental Club supports both daily and weekly car hire, making it easier to book transport for short local use, holidays, or temporary travel needs.",
+      "Yes. Star Rental supports both daily and weekly car hire, making it easier to book transport for short local use, holidays, or temporary travel needs.",
   },
   {
     question: "How do I request a quote for car rental services?",
@@ -265,8 +268,7 @@ export default function ServicesPage() {
               <p className="mt-4 text-lg leading-8 text-gray-600">
                 Explore flexible and affordable car rental services in Perth with{" "}
                 {BUSINESS.name}. Daily, weekly, and long-term vehicle hire for
-                individuals, families, and businesses across East Cannington and
-                surrounding Perth areas.
+                individuals, families, and businesses all over Perth.
               </p>
             </div>
           </ScrollReveal>
@@ -285,7 +287,7 @@ export default function ServicesPage() {
               </h2>
               <p className="mt-4 text-lg leading-8 text-gray-600">
                 Finding the right car rental in Perth should be simple. At Star
-                Rental Club, we offer clear pricing, easy booking, and reliable
+                Rental, we offer clear pricing, easy booking, and reliable
                 vehicles so you can focus on your journey instead of the process.
               </p>
               <div className="mt-6">
@@ -366,7 +368,7 @@ export default function ServicesPage() {
               <p className="mx-auto mt-4 max-w-3xl text-lg text-gray-600">
                 Our car rental services in Perth are designed for different
                 situations. Here are some of the most common reasons customers
-                choose Star Rental Club.
+                choose Star Rental.
               </p>
             </div>
           </ScrollReveal>
@@ -409,7 +411,7 @@ export default function ServicesPage() {
                   <div className="relative aspect-[3/2] bg-gradient-to-br from-slate-50 to-slate-100">
                     <Image
                       src={vehicleType.image}
-                      alt={`${vehicleType.type} for hire in Perth – Star Rental Club`}
+                      alt={`${vehicleType.type} for hire in Perth – Star Rental`}
                       fill
                       className="object-contain p-4"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -496,27 +498,15 @@ export default function ServicesPage() {
           <div className="mx-auto max-w-5xl">
             <div className="text-center">
               <p className="text-sm font-semibold uppercase tracking-widest text-brand-700">
-                Service Area
+                Car Hire Across Perth
               </p>
               <h2 className="mt-2 text-2xl font-bold text-gray-900 md:text-3xl">
-                Car Rental Services Across Perth
+                Car Rental Services Available All Over Perth
               </h2>
               <p className="mt-4 text-lg text-gray-600">
-                Star Rental Club is based in East Cannington, Western Australia,
-                and provides car rental services across:
+                Star Rental provides car rental services across all areas of Perth,
+                Western Australia.
               </p>
-            </div>
-            <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
-              {["Perth CBD", "East Cannington", "Cannington", "Victoria Park", "Bentley", "Surrounding Suburbs"].map(
-                (area) => (
-                  <div
-                    key={area}
-                    className="rounded-2xl border border-gray-200 bg-white px-4 py-5 text-center shadow-sm"
-                  >
-                    <p className="text-sm font-semibold text-gray-900">{area}</p>
-                  </div>
-                )
-              )}
             </div>
           </div>
         </section>

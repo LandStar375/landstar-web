@@ -4,26 +4,28 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { BUSINESS } from "@/data/constants";
 
 export const metadata: Metadata = {
-  title: "Contact Star Rental Club | Car Rental Perth & Cannington",
+  title: "Contact Star Rental | Car Rental Perth",
   description:
-    "Contact Star Rental Club for affordable car rental in Perth and East Cannington. Call, email, or send an enquiry to book your vehicle today.",
+    "Contact Star Rental for affordable car rental in Perth. Call, email, or send an enquiry to book your vehicle today.",
   keywords: [
-    "contact Star Rental Club",
+    "contact Star Rental",
     "car rental enquiry Perth",
-    "book a rental car East Cannington",
+    "book a rental car Perth",
     "car hire contact Perth WA",
     "car rental Perth contact",
+    "rent a car Perth",
+    "cheap car hire Perth",
   ],
   openGraph: {
-    title: "Contact Star Rental Club | Car Rental Perth & Cannington",
+    title: "Contact Star Rental | Car Rental Perth",
     description:
-      "Contact Star Rental Club for affordable car rental in Perth and East Cannington. Call, email, or send an enquiry to book your vehicle today.",
+      "Contact Star Rental for affordable car rental in Perth. Call, email, or send an enquiry to book your vehicle today.",
     images: [
       {
         url: "/images/hero-bg.jpg",
         width: 1200,
         height: 630,
-        alt: "Contact Star Rental Club – Car Rental Perth",
+        alt: "Contact Star Rental – Car Rental Perth",
       },
     ],
   },
@@ -32,9 +34,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Star Rental Club | Car Rental Perth & Cannington",
+    title: "Contact Star Rental | Car Rental Perth",
     description:
-      "Contact Star Rental Club for affordable car rental in Perth and East Cannington. Call, email, or send an enquiry to book your vehicle today.",
+      "Contact Star Rental for affordable car rental in Perth. Call, email, or send an enquiry to book your vehicle today.",
   },
 };
 
@@ -59,10 +61,10 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
       <section className="bg-gradient-to-br from-brand-900 via-brand-800 to-brand-600 px-4 py-12 text-white sm:px-6 sm:py-16 md:px-12">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl">
-            Contact Star Rental Club – Car Rental in Perth
+            Contact Star Rental – Car Rental in Perth
           </h1>
           <p className="mx-auto mt-3 max-w-2xl text-base text-brand-100 sm:mt-4 sm:text-lg">
-            Looking for car rental in Perth or East Cannington? Contact us for
+            Looking for car rental in Perth? Contact us for
             reliable and affordable vehicle hire. Whether you need a sedan, SUV,
             ute, or family vehicle, our team is ready to help.
           </p>

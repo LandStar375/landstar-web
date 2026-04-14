@@ -4,17 +4,17 @@ import { BUSINESS } from "@/data/constants";
 export const metadata: Metadata = {
   title: "Terms and Conditions",
   description:
-    "Review the rental terms and conditions for Star Rental Club, including renter responsibilities, coverage options, return rules, and business hours.",
+    "Review the rental terms and conditions for Star Rental, including renter responsibilities, coverage options, return rules, and business hours.",
   openGraph: {
-    title: "Terms and Conditions | Star Rental Club",
+    title: "Terms and Conditions | Star Rental",
     description:
-      "Review the rental terms and conditions for Star Rental Club, including renter responsibilities, coverage options, return rules, and business hours.",
+      "Review the rental terms and conditions for Star Rental, including renter responsibilities, coverage options, return rules, and business hours.",
     images: [
       {
         url: "/images/hero-bg.jpg",
         width: 1200,
         height: 630,
-        alt: "Star Rental Club – Terms and Conditions",
+        alt: "Star Rental – Terms and Conditions",
       },
     ],
   },
@@ -23,10 +23,10 @@ export const metadata: Metadata = {
   },
 };
 
-const businessName = "Star Rental Club";
+const businessName = "Star Rental";
 
 const responsibilities = [
-  "The vehicle must be returned to the Star Rental Club yard at 92 Mallard Way, East Cannington WA 6107 at the agreed time.",
+  "The vehicle must be returned to the Star Rental yard at 92 mallard way Cannington at the agreed time.",
   "Driving under the influence of alcohol or drugs is prohibited.",
   "The renter and any additional drivers must hold valid driver licenses.",
   "The renter is responsible for any breach of these terms by an additional driver.",
@@ -87,7 +87,7 @@ const excludedDamages = [
   "Unauthorized use, including travel outside the approved geographical area or use by an unauthorized driver",
   "Interior damage such as stains, burns, rips, or other preventable damage",
   "Mechanical damage caused by ignoring dashboard warnings or continuing to drive after a fault appears",
-  "Towing the vehicle without prior authorization from Star Rental Club",
+  "Towing the vehicle without prior authorization from Star Rental",
   "Leaving the vehicle unlocked or leaving the keys inside the vehicle",
   "Underbody or water damage regardless of cause",
   "Theft or loss caused by failing to secure the vehicle or return the keys",

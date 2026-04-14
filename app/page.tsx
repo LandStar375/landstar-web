@@ -11,27 +11,33 @@ import { HiOutlineClock, HiOutlineGlobeAlt, HiOutlineMapPin } from "react-icons/
 export const metadata: Metadata = {
   title: "Car Rental Perth | Affordable Car Hire Perth",
   description:
-    "Looking for car rental Perth? Star Rental Club offers affordable and reliable car hire in East Cannington, Perth CBD, and surrounding suburbs. Browse sedans, SUVs, utes, and family vehicles.",
+    "Looking for car rental Perth? Star Rental offers affordable and reliable car hire all over Perth. Browse sedans, SUVs, utes, and family vehicles.",
   keywords: [
     "car rental Perth",
     "car hire Perth",
-    "car hire East Cannington",
-    "Perth CBD car rental",
-    "Star Rental Club",
+    "cheap car rental Perth",
+    "Star Rental",
     "daily weekly car hire Perth",
     "affordable car rental Perth",
     "reliable car hire WA",
+    "best car rental Perth",
+    "car hire near me Perth",
+    "rent a car Perth",
+    "vehicle hire Perth",
+    "budget car rental Perth",
+    "short term car rental Perth",
+    "long term car hire Perth",
   ],
   openGraph: {
-    title: "Car Rental Perth | Affordable Car Hire Perth | Star Rental Club",
+    title: "Car Rental Perth | Affordable Car Hire Perth | Star Rental",
     description:
-      "Looking for car rental Perth? Star Rental Club offers affordable and reliable car hire in East Cannington, Perth CBD, and surrounding suburbs.",
+      "Looking for car rental Perth? Star Rental offers affordable and reliable car hire all over Perth.",
     images: [
       {
         url: "/images/hero-bg.jpg",
         width: 1200,
         height: 630,
-        alt: "Star Rental Club – Affordable Car Rental Perth",
+        alt: "Star Rental – Affordable Car Rental Perth",
       },
     ],
   },
@@ -40,9 +46,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Car Rental Perth | Affordable Car Hire Perth | Star Rental Club",
+    title: "Car Rental Perth | Affordable Car Hire Perth | Star Rental",
     description:
-      "Looking for car rental Perth? Star Rental Club offers affordable and reliable car hire in East Cannington, Perth CBD, and surrounding suburbs.",
+      "Looking for car rental Perth? Star Rental offers affordable and reliable car hire all over Perth.",
   },
 };
 
@@ -270,7 +276,7 @@ export default function HomePage() {
             <div className="relative aspect-[5/4] overflow-hidden rounded-3xl shadow-xl">
               <Image
                 src="/images/why-landstar.jpg"
-                alt="Reliable car rental Perth – Star Rental Club quality vehicle"
+                alt="Reliable car rental Perth – Star Rental quality vehicle"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -283,22 +289,20 @@ export default function HomePage() {
                 Why Rent With Us
               </p>
               <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
-                Why Star Rental Club?
+                Why Star Rental?
               </h2>
               <p className="mt-4 text-lg leading-8 text-slate-600">
-                At Star Rental Club, we focus on providing high-quality car rental
+                At Star Rental, we focus on providing high-quality car rental
                 Perth services for daily travel, business use, and personal trips.
                 Our vehicles are clean, well-maintained, and ready for immediate
-                use. Based in East Cannington, we serve customers throughout Perth
-                CBD, Cannington, nearby eastern suburbs, and the greater Perth
-                region.
+                use. We provide service all over Perth.
               </p>
               <div className="mt-8 space-y-4">
                 <CheckItem>Affordable car rental Perth pricing</CheckItem>
                 <CheckItem>No hidden charges – transparent pricing</CheckItem>
                 <CheckItem>Flexible daily, weekly &amp; long-term hire</CheckItem>
                 <CheckItem>Reliable, well-maintained vehicles</CheckItem>
-                <CheckItem>Friendly local service in East Cannington</CheckItem>
+                <CheckItem>Friendly local service in Perth</CheckItem>
               </div>
               <div className="mt-8">
                 <Button href="/about" variant="secondary">
@@ -415,27 +419,15 @@ export default function HomePage() {
           <div className="mx-auto max-w-6xl">
             <div className="text-center">
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-700">
-                Service Areas
+                Car Hire Across Perth
               </p>
               <h2 className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">
-                Serving Perth and Surrounding Areas
+                Affordable Car Rental Available All Over Perth
               </h2>
               <p className="mt-3 text-lg text-slate-600">
-                Our car rental Perth services are based in East Cannington, Western
-                Australia, allowing us to serve customers across the region.
+                No matter where you are in Perth, Star Rental provides reliable
+                and affordable car hire to get you on the road.
               </p>
-            </div>
-            <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-5">
-              {["Perth CBD", "East Cannington", "Cannington", "Eastern Suburbs", "Greater Perth"].map(
-                (area) => (
-                  <div
-                    key={area}
-                    className="rounded-2xl border border-slate-200 bg-white px-4 py-5 text-center shadow-sm"
-                  >
-                    <p className="text-base font-semibold text-slate-900">{area}</p>
-                  </div>
-                )
-              )}
             </div>
             <p className="mt-6 text-center text-sm text-slate-500">
               We are committed to providing convenient and dependable car hire
@@ -455,7 +447,7 @@ export default function HomePage() {
               Book Your Car Rental in Perth
             </h2>
             <p className="mt-4 text-lg text-brand-100">
-              If you are looking for car rental Perth, Star Rental Club is ready
+              If you are looking for car rental Perth, Star Rental is ready
               to help. Contact us today to book your vehicle and enjoy a smooth
               and stress-free rental experience.
             </p>
