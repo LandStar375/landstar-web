@@ -14,4 +14,7 @@ export const BUSINESS = {
   happyCustomers: "1000+",
   responseTime: "Fast replies",
   rating: "5.0/5",
+  // Replace with your actual Google Place ID from https://developers.google.com/maps/documentation/places/web-service/place-id
+  googlePlaceId: "YOUR_GOOGLE_PLACE_ID",
+  googleReviewUrl: "https://search.google.com/local/writereview?placeid=YOUR_GOOGLE_PLACE_ID",
 } as const;
