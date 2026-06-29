@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     "affordable car rental Australia",
     "car hire near me Perth",
     "short term car rental Perth",
-    "long term car hire Perth",
+    "short term car hire Perth",
   ],
   authors: [{ name: "Star Rental" }],
   openGraph: {
@@ -90,7 +90,7 @@ export default function RootLayout({
               "@type": "AutoRental",
               name: "Star Rental",
               description:
-                "Affordable and reliable car rental in Perth. Star Rental offers sedans, SUVs, utes, and people movers for daily, weekly, and long-term hire all over Perth.",
+                "Affordable and reliable car rental in Perth. Star Rental offers sedans, SUVs, utes, and people movers for daily, weekly, and short-term hire all over Perth.",
               url: "https://starrental.com.au",
               telephone: "+61469716030",
               email: "info@starrental.com.au",

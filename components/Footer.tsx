@@ -36,7 +36,7 @@ export default function Footer() {
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-7 text-slate-400">
               Affordable and reliable car rental in Perth. We offer sedans, SUVs, utes, and family vehicles
-              for daily, weekly, and long-term hire all over Perth.
+              for daily, weekly, and short-term hire all over Perth.
             </p>
             <div className="mt-5 flex items-center gap-4">
               <a

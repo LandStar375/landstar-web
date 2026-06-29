@@ -67,7 +67,7 @@ const offeringCards = [
     icon: <HiOutlineCalendar className="h-6 w-6" />,
     title: "Flexible Rental Options",
     description:
-      "Daily, weekly, or long-term — we offer flexible car rental terms that fit your schedule, whether it's a quick errand or an extended trip.",
+      "Daily, weekly, or short-term — we offer flexible car rental terms that fit your schedule, whether it's a quick errand or an extended trip.",
   },
   {
     icon: <HiOutlineUserGroup className="h-6 w-6" />,

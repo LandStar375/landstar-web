@@ -19,14 +19,14 @@ import {
 } from "react-icons/hi2";
 
 export const metadata: Metadata = {
-  title: "Car Rental Services Perth | Daily, Weekly & Long Term Hire",
+  title: "Car Rental Services Perth | Daily, Weekly & Short Term Hire",
   description:
-    "Explore car rental services in Perth with Star Rental. Daily, weekly, and long-term car hire available all over Perth.",
+    "Explore car rental services in Perth with Star Rental. Daily, weekly, and short-term car hire available all over Perth.",
   keywords: [
     "car rental services Perth",
     "vehicle hire Perth",
     "car hire Perth",
-    "long term car rental Perth",
+    "short term car rental Perth",
     "daily car rental Perth",
     "weekly car hire Perth",
     "business car rental Perth",
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
     "best car hire Perth",
   ],
   openGraph: {
-    title: "Car Rental Services Perth | Daily, Weekly & Long Term Hire | Star Rental",
+    title: "Car Rental Services Perth | Daily, Weekly & Short Term Hire | Star Rental",
     description:
-      "Explore car rental services in Perth with Star Rental. Daily, weekly, and long-term car hire available all over Perth.",
+      "Explore car rental services in Perth with Star Rental. Daily, weekly, and short-term car hire available all over Perth.",
     images: [
       {
         url: "/images/hero-bg.jpg",
@@ -58,9 +58,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Car Rental Services Perth | Daily, Weekly & Long Term Hire | Star Rental",
+    title: "Car Rental Services Perth | Daily, Weekly & Short Term Hire | Star Rental",
     description:
-      "Explore car rental services in Perth with Star Rental. Daily, weekly, and long-term car hire available all over Perth.",
+      "Explore car rental services in Perth with Star Rental. Daily, weekly, and short-term car hire available all over Perth.",
   },
 };
 
@@ -81,9 +81,9 @@ const services = [
   },
   {
     icon: <HiOutlineDocumentText className="h-6 w-6" />,
-    title: "Long-Term Car Rental Perth",
+    title: "Short-Term Car Rental Perth",
     description:
-      "Looking for long-term vehicle hire in Perth? We offer flexible, cost-effective car rental without lock-in contracts — perfect for extended personal or work use.",
+      "Looking for short-term vehicle hire in Perth? We offer flexible, cost-effective car rental without lock-in contracts — perfect for extended personal or work use.",
     features: ["No unnecessary contracts", "Flexible scheduling", "Consistent affordable pricing"],
   },
   {
@@ -189,14 +189,14 @@ const servicesFaqs = [
       "Yes, Star Rental is based in Perth and serves all areas across Perth.",
   },
   {
-    question: "Can I rent a car for long-term use?",
+    question: "Can I rent a car for short-term use?",
     answer:
-      "Yes. We provide flexible long-term car rental options in Perth. Contact us directly so we can discuss vehicle options and your preferred schedule.",
+      "Yes. We provide flexible short-term car rental options in Perth. Contact us directly so we can discuss vehicle options and your preferred schedule.",
   },
   {
     question: "Do you offer affordable car hire?",
     answer:
-      "Yes, we focus on budget-friendly car rental services in Perth without hidden charges. Our pricing is transparent across daily, weekly, and long-term hire.",
+      "Yes, we focus on budget-friendly car rental services in Perth without hidden charges. Our pricing is transparent across daily, weekly, and short-term hire.",
   },
   {
     question: "What vehicle types are available for rental?",
@@ -267,7 +267,7 @@ export default function ServicesPage() {
               </h2>
               <p className="mt-4 text-lg leading-8 text-gray-600">
                 Explore flexible and affordable car rental services in Perth with{" "}
-                {BUSINESS.name}. Daily, weekly, and long-term vehicle hire for
+                {BUSINESS.name}. Daily, weekly, and short-term vehicle hire for
                 individuals, families, and businesses all over Perth.
               </p>
             </div>

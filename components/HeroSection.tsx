@@ -23,7 +23,7 @@ export default function HeroSection() {
             Affordable Car Hire in Perth
           </h1>
           <p className="mt-3 max-w-xl text-base text-gray-200 sm:mt-4 sm:text-lg md:text-xl">
-            Daily, weekly, and long-term rental cars all over Perth.
+            Daily, weekly, and short-term rental cars all over Perth.
             Choose from sedans, SUVs, utes, and family vehicles with simple local
             booking.
           </p>

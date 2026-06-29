@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     "vehicle hire Perth",
     "budget car rental Perth",
     "short term car rental Perth",
-    "long term car hire Perth",
+    "short term car hire Perth",
   ],
   openGraph: {
     title: "Car Rental Perth | Affordable Car Hire Perth | Star Rental",
@@ -274,7 +274,7 @@ export default function HomePage() {
               <div className="mt-8 space-y-4">
                 <CheckItem>Affordable car rental Perth pricing</CheckItem>
                 <CheckItem>No hidden charges – transparent pricing</CheckItem>
-                <CheckItem>Flexible daily, weekly &amp; long-term hire</CheckItem>
+                <CheckItem>Flexible daily, weekly &amp; short-term hire</CheckItem>
                 <CheckItem>Reliable, well-maintained vehicles</CheckItem>
                 <CheckItem>Friendly local service in Perth</CheckItem>
               </div>
