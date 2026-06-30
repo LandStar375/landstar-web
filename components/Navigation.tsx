@@ -32,6 +32,7 @@ export default function Navigation() {
               height={50}
               className="h-14 w-auto sm:h-16"
               priority
+              unoptimized
             />
           </Link>
 
