@@ -26,10 +26,10 @@ export default function Navigation() {
         <div className="flex h-[80px] items-center justify-between gap-6">
           <Link href="/" className="flex items-center gap-2 mx-auto md:mx-0">
             <Image
-              src="/images/Logo/starRental logo.png"
+              src="/images/Logo/starRental logo1.png"
               alt="Star Rental – Car Rental Perth"
-              width={200}
-              height={50}
+              width={400}
+              height={100}
               className="h-14 w-auto sm:h-16"
               priority
               unoptimized

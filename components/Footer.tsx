@@ -27,10 +27,10 @@ export default function Footer() {
           <div>
             <Link href="/">
               <Image
-                src="/images/Logo/starRental logo.png"
+                src="/images/Logo/starRental logo2.png"
                 alt="Star Rental – Car Rental Perth"
-                width={220}
-                height={65}
+                width={400}
+                height={100}
                 className="h-14 w-auto brightness-0 invert"
                 unoptimized
               />
